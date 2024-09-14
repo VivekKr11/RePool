@@ -3,7 +3,9 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Homepage from './Pages/Homepage'
-import MiddleSection from './Pages/MiddleSection';
+
+import Footer from './Components/Footer';
+
 
 function App() {
  
@@ -12,7 +14,7 @@ function App() {
     <>
      <Navbar/>
      <Homepage/>
-     
+     <Footer/>
     </>
   )
 }

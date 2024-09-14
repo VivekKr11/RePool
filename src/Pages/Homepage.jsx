@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import MiddleSection from "./MiddleSection";
 
 const Homepage = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // State to track active index
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const settings = {
     dots: true,
@@ -43,7 +43,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="container m-auto">
+    <div className=" font-saira">
       {/* herosection */}
       <div className="relative w-full h-screen">
         <Slider {...settings} className="h-full relative">
@@ -55,7 +55,7 @@ const Homepage = () => {
             >
               <div className="text-center text-white flex justify-center">
                 <div className="w-3/5">
-                  <h2 className="text-4xl md:text-5xl font-bold">
+                  <h2 className="text-4xl md:text-6xl font-bold ">
                     LEADING ENTERPRISE IN ASSET POOLING
                   </h2>
                   <p className="text-lg md:text-xl mt-4">
@@ -75,7 +75,7 @@ const Homepage = () => {
             >
               <div className="text-center text-white mt-60 flex justify-center">
                 <div className="w-3/5">
-                  <h2 className="text-4xl md:text-5xl font-bold">
+                  <h2 className="text-4xl md:text-6xl font-bold font-saira">
                     ISO 27001 CERTIFIED
                   </h2>
                   <p className="text-lg md:text-xl mt-4">
@@ -97,7 +97,7 @@ const Homepage = () => {
             >
               <div className="mt-60 text-center text-white flex justify-center">
                 <div className="w-3/5">
-                  <h2 className="text-4xl md:text-5xl font-bold">
+                  <h2 className="text-4xl md:text-6xl font-bold font-saira">
                     SUSTAINABLE BUSINESS OF THE YEAR
                   </h2>
                   <p className="text-lg md:text-xl mt-4">
@@ -180,7 +180,7 @@ const Homepage = () => {
       {/* Third Section */}
       <div className="bg-white p-8 flex items-center justify-center min-h-screen">
         {/* Text Section */}
-        <div className="md:w-5/6 flex justify-center">
+        <div className="md:w-5/6 flex justify-center container m-auto">
           <div>
             <div className="flex md:flex-row flex-col justify-between">
               <div className="md:w-1/2 w-full">
@@ -237,7 +237,7 @@ const Homepage = () => {
       {/* fifth section */}
       <div className=" p-10">
         {/* Container for the whole section */}
-        <div className="w-full flex md:flex-row flex-col items-center mx-auto   gap-10">
+        <div className="container m-auto w-full flex md:flex-row flex-col items-center mx-auto   gap-10">
           {/* Left Section: Pioneers in Asset Pooling */}
           <div className="space-y-6 md:w-1/2 w-full flex flex-col items-center justify-center h-1/2 md:p-12">
             <div>
@@ -265,7 +265,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="flex justify-center mt-12">
-          <div className="md:w-1/2 w-full">
+          <div className="md:w-1/2 w-full container m-auto">
             <p className="text-5xl font-bold text-center">
               Client Testimonials
             </p>
@@ -280,7 +280,7 @@ const Homepage = () => {
       </div>
       {/* sixth section */}
       <div className="flex flex-wrap justify-center">
-        <div className="w-full flex flex-wrap justify-around gap-10">
+        <div className="container m-auto w-full flex flex-wrap justify-around gap-10">
           <img
             className="rounded-lg"
             src="https://placehold.co/400x300"
@@ -320,7 +320,7 @@ const Homepage = () => {
       </div>
       {/* last section  */}
       <div className="relative w-full bg-[#EFEFEC] py-9 flex justify-center mt-12">
-        <div className="relative w-5/6 h-[500px] rounded-3xl overflow-hidden">
+        <div className="relative w-5/6 h-[500px] rounded-3xl overflow-hidden container m-auto">
           <img
             src="./BackgroundImage/gallery8.webp"
             alt="A Sustainable Future"
@@ -328,7 +328,7 @@ const Homepage = () => {
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <div className="text-center text-white p-6 md:p-8">
-              <h1 className="text-2xl md:text-4xl font-bold">
+              <h1 className="text-2xl md:text-4xl font-bold ">
                 A Sustainable Future
               </h1>
               <p className="mt-4 text-sm md:text-lg leading-relaxed">
@@ -347,7 +347,7 @@ const Homepage = () => {
                 towards helping the environment and conducting business
                 sensibly.
               </p>
-              <button className="mt-6 px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all duration-300">
+              <button className="mt-6 px-6 py-4 border border-white text-white hover:bg-white hover:text-black transition-all duration-300">
                 Learn more
               </button>
             </div>
