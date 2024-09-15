@@ -7,7 +7,7 @@ const Navbar = () => {
     products: false,
     media: false,
   });
-  
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleDropdown = (dropdown) => {
@@ -40,7 +40,9 @@ const Navbar = () => {
           <img
             src="./logo/Repool-India-Logo.svg"
             alt="Repool Logo"
-            className={`h-${isScrolled ? '8' : '12'} transition-all duration-300`} // Adjust height based on scroll
+            className={`transition-all duration-300 ${
+              isScrolled ? "h-8" : "h-12"
+            }`} // Adjust height based on scroll
           />
         </div>
 
@@ -51,7 +53,11 @@ const Navbar = () => {
           </p>
 
           {/* About Dropdown */}
-          <div className="relative group" onMouseEnter={() => toggleDropdown('about')} onMouseLeave={() => toggleDropdown('about')}>
+          <div
+            className="relative group"
+            onMouseEnter={() => toggleDropdown("about")}
+            onMouseLeave={() => toggleDropdown("about")}
+          >
             <div className="flex gap-1">
               <p className="text-gray-800 hover:text-blue-500 cursor-pointer h-full py-6">
                 About
@@ -62,83 +68,155 @@ const Navbar = () => {
             </div>
             <div
               className={`absolute top-16 left-0 bg-white py-2 transition-opacity duration-700 ease-in-out transform ${
-                dropdowns.about ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+                dropdowns.about
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">About LEAP</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Leadership</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Annual Returns</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Sustainability</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">CSR</p>
-              <p className="block p-2 w-40 text-gray-800 cursor-pointer">Policies</p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                About LEAP
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Leadership
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Annual Returns
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Sustainability
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                CSR
+              </p>
+              <p className="block p-2 w-40 text-gray-800 cursor-pointer">
+                Policies
+              </p>
             </div>
           </div>
 
           {/* Services Dropdown */}
-          <div className="relative group" onMouseEnter={() => toggleDropdown('services')} onMouseLeave={() => toggleDropdown('services')}>
+          <div
+            className="relative group"
+            onMouseEnter={() => toggleDropdown("services")}
+            onMouseLeave={() => toggleDropdown("services")}
+          >
             <div className="flex gap-1">
-              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">Services</p>
+              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">
+                Services
+              </p>
               <div className="flex items-center">
                 <img className="h-3" src="./logo/dropdown.svg" alt="" />
               </div>
             </div>
             <div
               className={`absolute top-16 left-0 bg-white py-2 transition-opacity duration-700 ease-in-out transform ${
-                dropdowns.services ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+                dropdowns.services
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Equipment Pooling</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Returnable Packing</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Asset Management</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Transportation</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Repair and Management</p>
-              <p className="block p-3 w-40 text-gray-800 cursor-pointer">Inventory Management</p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Equipment Pooling
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Returnable Packing
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Asset Management
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Transportation
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Repair and Management
+              </p>
+              <p className="block p-3 w-40 text-gray-800 cursor-pointer">
+                Inventory Management
+              </p>
             </div>
           </div>
 
           {/* Products Dropdown */}
-          <div className="relative group" onMouseEnter={() => toggleDropdown('products')} onMouseLeave={() => toggleDropdown('products')}>
+          <div
+            className="relative group"
+            onMouseEnter={() => toggleDropdown("products")}
+            onMouseLeave={() => toggleDropdown("products")}
+          >
             <div className="flex gap-1">
-              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">Product</p>
+              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">
+                Product
+              </p>
               <div className="flex items-center">
                 <img className="h-3" src="./logo/dropdown.svg" alt="" />
               </div>
             </div>
             <div
               className={`absolute top-16 left-0 bg-white py-2 transition-opacity duration-700 ease-in-out transform ${
-                dropdowns.products ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+                dropdowns.products
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Pallet</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">FLC</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Window FLC</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Crate</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Utility Box</p>
-              <p className="block p-3 w-40 text-gray-800 cursor-pointer">Other Products</p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Pallet
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                FLC
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Window FLC
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Crate
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Utility Box
+              </p>
+              <p className="block p-3 w-40 text-gray-800 cursor-pointer">
+                Other Products
+              </p>
             </div>
           </div>
 
           {/* Media Dropdown */}
-          <div className="relative group" onMouseEnter={() => toggleDropdown('media')} onMouseLeave={() => toggleDropdown('media')}>
+          <div
+            className="relative group"
+            onMouseEnter={() => toggleDropdown("media")}
+            onMouseLeave={() => toggleDropdown("media")}
+          >
             <div className="flex gap-1">
-              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">Media</p>
+              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">
+                Media
+              </p>
               <div className="flex items-center">
                 <img className="h-3" src="./logo/dropdown.svg" alt="" />
               </div>
             </div>
             <div
               className={`absolute top-16 left-0 bg-white py-2 transition-opacity duration-700 ease-in-out transform ${
-                dropdowns.media ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+                dropdowns.media
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Events</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Newsroom</p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">Blog</p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Events
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Newsroom
+              </p>
+              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                Blog
+              </p>
             </div>
           </div>
 
-          <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">Careers</p>
-          <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">Contact</p>
+          <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">
+            Careers
+          </p>
+          <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">
+            Contact
+          </p>
         </div>
 
         {/* Social Media Icons */}
