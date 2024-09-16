@@ -2,8 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 font-saira">
-      <div className="w-5/6 container m-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:px-6">
+    <footer className="relative bg-gray-900 text-white py-10 font-saira mt-14 overflow-hidden">
+      <img
+        className="absolute top-0 left-0 transform rotate-180 w-full h-auto"
+        src="./AboutUs/White-bg-mask.svg"
+        alt=""
+      />
+      <div className="w-5/6 container m-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:px-6 pt-10">
         <div className="text-center md:text-left">
           <img
             src="/logo/Repool-India-Logo.svg"
@@ -18,7 +23,9 @@ const Footer = () => {
         </div>
 
         <div className=" md:text-left">
-          <h4 className="text-xl font-semibold mb-4 text-center">Contact Info</h4>
+          <h4 className="text-xl font-semibold mb-4 text-center">
+            Contact Info
+          </h4>
           <div className="flex flex-col items-start gap-2 mt-3">
             <div className="flex gap-2">
               <img className="h-4 mt-1" src="./logo/location.svg" alt="" />

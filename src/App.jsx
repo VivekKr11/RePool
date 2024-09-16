@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 
 import Footer from "./Components/Footer";
 import Homepage from "./HomePage/Homepage";
+import AboutLeap from "./AboutPage/AboutLeap";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/AboutLeap" element={<AboutLeap />} />
+
         </Routes>
         <Footer />
       </Router>

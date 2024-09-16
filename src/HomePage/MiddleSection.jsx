@@ -43,53 +43,53 @@ const MiddleSection = () => {
   };
 
   return (
-    <div className="bg-green-600 flex justify-center items-center  h-screen w-full">
-      <div className="container m-auto flex justify-center  ">
-        <div className="w-5/6 flex justify-between items-center  ">
-          {/* Left Side: Text Section */}
-          <div className="p-10 text-white w-1/2">
-            <h1 className="text-4xl font-bold mb-4">TARON MHE</h1>
-            <h2 className="text-xl font-semibold mb-6">
+    <div className="bg-green-600 flex justify-center items-center min-h-screen w-full p-4">
+      <div className="container mx-auto flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center">
+          {/* Text Section on top for small screens */}
+          <div className="p-5 md:p-10 text-white md:w-1/2 w-full order-2 md:order-1">
+            <h1 className="text-2xl md:text-4xl font-bold mb-4">TARON MHE</h1>
+            <h2 className="text-lg md:text-xl font-semibold mb-6">
               A Subsidiary of LEAP India
             </h2>
-            <p className="mb-6">
+            <p className="mb-4 md:mb-6 text-sm md:text-base">
               TARON offers comprehensive solutions in Material Handling
               operations for your effective supply chain needs. From a totally
               modern equipment, advanced safety features, asset management with
               real-time fleet analysis to ensuring "ZERO" incident rate with
               higher productivity.
             </p>
-            <p className="mb-6">
+            <p className="mb-4 md:mb-6 text-sm md:text-base">
               Our prime goal is to make our customers delight by anticipating
               their changing wants while providing effective results.
             </p>
-            <button className="bg-transparent border hover:text-black hover:bg-white border-white py-2 px-6 mt-4 text-lg font-medium">
+            <button className="bg-transparent border hover:text-black hover:bg-white border-white py-2 px-4 md:px-6 mt-4 text-sm md:text-lg font-medium">
               Visit TARON Website
             </button>
           </div>
 
-          {/* Right Side: Carousel Section */}
-          <div className="w-1/2 relative">
+          {/* Carousel Section below for small screens */}
+          <div className="md:w-1/2 w-full relative order-1 md:order-2 mb-8 md:mb-0">
             <Slider {...settings}>
               <div>
                 <img
                   src="./BackgroundImage/one.webp"
                   alt="Forklift 1"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./BackgroundImage/2.webp"
                   alt="Forklift 2"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./BackgroundImage/3.webp"
                   alt="Forklift 3"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </Slider>

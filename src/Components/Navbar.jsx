@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [dropdowns, setDropdowns] = useState({
@@ -48,10 +49,11 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-8">
-          <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">
-            Home
-          </p>
-
+          <NavLink to="/">
+            <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">
+              Home
+            </p>
+          </NavLink>
           {/* About Dropdown */}
           <div
             className="relative group"
@@ -62,6 +64,7 @@ const Navbar = () => {
               <p className="text-gray-800 hover:text-blue-500 cursor-pointer h-full py-6">
                 About
               </p>
+
               <div className="flex items-center">
                 <img className="h-3" src="./logo/dropdown.svg" alt="" />
               </div>
@@ -73,9 +76,11 @@ const Navbar = () => {
                   : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
-                About LEAP
-              </p>
+              <NavLink to="/AboutLeap">
+                <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                  About LEAP
+                </p>
+              </NavLink>
               <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
                 Leadership
               </p>
@@ -228,7 +233,11 @@ const Navbar = () => {
             <img className="h-7" src="./logo/facebooklog.svg" alt="Facebook" />
           </p>
           <p className="flex items-center cursor-pointer">
-            <img className="h-8" src="./logo/instagramlogo.svg" alt="Instagram" />
+            <img
+              className="h-8"
+              src="./logo/instagramlogo.svg"
+              alt="Instagram"
+            />
           </p>
           <p className="flex items-center cursor-pointer">
             <img className="h-6" src="./logo/xlogo.svg" alt="X/Twitter" />
