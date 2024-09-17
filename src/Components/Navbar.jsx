@@ -86,9 +86,11 @@ const Navbar = () => {
                   Leadership
                 </p>
               </NavLink>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
-                Annual Returns
-              </p>
+              <NavLink to="annualreturn">
+                <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                  Annual Returns
+                </p>
+              </NavLink>
               <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
                 Sustainability
               </p>
