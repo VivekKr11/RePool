@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Homepage from "./HomePage/Homepage";
 import AboutLeap from "./AboutPage/AboutLeap";
+import Leadership from "./AboutPage/Leadership";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/AboutLeap" element={<AboutLeap />} />
+          <Route path="/leadership" element={<Leadership />} />
 
         </Routes>
         <Footer />
