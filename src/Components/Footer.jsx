@@ -15,11 +15,38 @@ const Footer = () => {
             alt="Logo"
             className="mb-4 h-16 mx-auto md:mx-0"
           />
-          <p className="text-gray-400">
-            Beginning its operations in 2013, LEAP India has created a
-            significant pan-India presence and is one of the leaders in the
-            supply chain pooling space in India.
+          <p className="text-gray-300 text-xl mt-4">
+            Connect with Us on Social Media
           </p>
+          <div className="flex space-x-8 mt-2">
+            <p className="flex items-center cursor-pointer">
+              <img
+                className="h-5"
+                src="./logo/linkedinlogo.svg"
+                alt="LinkedIn"
+              />
+            </p>
+            <p className="flex items-center cursor-pointer">
+              <img
+                className="h-5"
+                src="./logo/facebooklog.svg"
+                alt="Facebook"
+              />
+            </p>
+            <p className="flex items-center cursor-pointer">
+              <img
+                className="h-6"
+                src="./logo/instagramlogo.svg"
+                alt="Instagram"
+              />
+            </p>
+            <p className="flex items-center cursor-pointer">
+              <img className="h-5" src="./logo/xlogo.png" alt="X/Twitter" />
+            </p>
+            <p className="flex items-center cursor-pointer">
+              <img className="h-6" src="./logo/youtubelogo.svg" alt="YouTube" />
+            </p>
+          </div>
         </div>
 
         <div className=" md:text-left">

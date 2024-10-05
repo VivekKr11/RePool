@@ -8,6 +8,7 @@ import Homepage from "./HomePage/Homepage";
 import AboutLeap from "./AboutPage/AboutLeap";
 import Leadership from "./AboutPage/Leadership";
 import AnnualReturn from "./AboutPage/AnnualReturn";
+import Pallet from "./Product/Pallet";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/AboutLeap" element={<AboutLeap />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/annualreturn" element={<AnnualReturn />} />
+          <Route path="/pallet" element={<Pallet />} />
         </Routes>
         <Footer />
       </Router>
