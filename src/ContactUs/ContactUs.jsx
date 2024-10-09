@@ -17,7 +17,7 @@ const ContactDetails = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Content */}
-        <div className="relative mt-12 z-10 max-w-4xl mx-auto px-6 text-white">
+        <div className="relative  z-10 max-w-4xl mx-auto px-6 text-white">
           <h2 className="text-sm font-semibold uppercase text-white">
             Contact Us
           </h2>

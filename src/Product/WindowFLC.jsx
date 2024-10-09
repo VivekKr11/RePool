@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pallet = () => {
+const WindowFLC = () => {
   return (
     <>
       <div className="mt-16 min-h-screen bg-gradient-to-r from-blue-600 to-gray-900 text-white py-12 font-saira">
@@ -8,9 +8,12 @@ const Pallet = () => {
         <div className="mt-12 container mx-auto px-4 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
           {/* Left content */}
           <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
-            <h1 className="text-3xl md:text-5xl font-bold"> Repool India Pallet </h1>
+            <h1 className="text-3xl md:text-5xl font-bold">
+              {" "}
+              Repool India Pallet{" "}
+            </h1>
             <p className="text-base md:text-lg leading-relaxed">
-            Repool India manufactures and supply a wide range of pallets to its customer. After understanding customer's need we help our customers the pallets best suited for their SCM needs. Our vast range of product includes wooden, metal & plastic pallets. Repool India strives to attain high-quality product and service standards to help your Supply Chain function economically and efficiently in a seamless manner. Get the palllet right fitted for your SCM whenever and wherever you need.
+            FLC which comes with a window or flap to allow easy access to the container's content is a window FLC and thus helps in reducing the turnaround time. Repool India provides windows on these FLCs either on both long and short side of the FLC or on just one side depending upon the customer requirement.These FLCs are specifically designed to provide maximum product protection and load stability while reducing the cost of relocating empty containers.
             </p>
 
             {/* Brochure button */}
@@ -292,4 +295,4 @@ const Pallet = () => {
   );
 };
 
-export default Pallet;
+export default WindowFLC;
