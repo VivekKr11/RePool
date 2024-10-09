@@ -76,59 +76,23 @@ const AboutLeap = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-white md:p-8 font-saira">
+      <div className="container m-auto bg-white md:p-8 font-saira">
         <div className="w-5/6 mx-auto">
-          <h2 className="text-4xl font-bold mb-8">Why LEAP?</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="text-4xl font-bold mb-8">Why RePool India?</h2>
+          <div className=" gap-8">
             <div>
               <p>
-                We, at LEAP, know for a fact that improving supply chain
-                efficiencies is a lifelong learning process. Our decades of
-                research and development, products, and solutions have always
-                aimed at improving efficiency, profitability, and sustainability
-                of your supply chain without having to compromise on compliance.
-              </p>
-              <p>
-                We now hold the lion's share of the market in Asset Pooling and
-                have delivered quality supply chain solutions via our 22
-                warehouses, 9 manufacturing units, 2500+ locations, 6 million+
-                total managed assets and 4000+ consumer touchpoints spread
-                across the country.
-              </p>
-              <p>
-                Since our inception in 2013, LEAP India has driven a wide range
-                of supply chain industries across the country via products,
-                customized supply chain solutions, that have considerably
-                reduced transportation costs, aimed for lesser wastage, minimal
-                inventories, and heightened efficiencies in the Supply Chain
-                Management workflow.
-              </p>
-            </div>
-            <div>
-              <p>
-                The reason why customers prefer LEAP is because of our unmatched
-                quality in the Pooling and Supply Chain solutions. Better
-                quality solutions and innovations, including dependable
-                warehousing solutions, have been our top priority in protecting
-                our clients' cargo.
-              </p>
-              <p>
-                Dedicated LEAPIans ensure proper reporting and timely response
-                to our clientele, ensuring a seamless supply chain solution
-                experience. We also warrant cost efficiency, compliance, and
-                enhanced lifecycle visibility via our MyLEAP App, which
-                communicates the flow of information seamlessly to all our
-                clients.
-              </p>
-              <p>
-                Established in 2013 with a mission of quality supply chain
-                solutions in mind, LEAP, or ‘Leading Enterprise in Asset
-                Pooling’, has forged the path ahead with the most exceptional
-                level of execution, planning and management tailored for our
-                esteemed customers across the country. We have created a niche
-                for ourselves in the Supply Chain industry and have established
-                ourselves as a brand that carries immense trust from everyone
-                associated with us.
+                We feel proud to go the extra mile to provide our customes with
+                the best packaging solutions wherever and whenever they need.
+                With a dedicated team of highly trained focused professionals we
+                aim to provide best in class products and services to our
+                clients by deeply understanding their pakaging needs and helping
+                them with cost effective solutions without having to compromise
+                with the quality. We know for a fact that learning is not a one
+                time thing but rather a continuous process and thus with our
+                customer centric business strategy we in Repool India
+                continuouly monitor and improve the customer experience by
+                taking their feedback aas an opportunity to improve.
               </p>
             </div>
           </div>
@@ -158,10 +122,7 @@ const AboutLeap = () => {
             MISSION
           </h1>
           <p className="mt-5 text-lg md:text-xl text-center md:text-left">
-            The purpose of LEAP is to bring a two-way packaging model to the
-            Indian Supply Chain by providing innovative solutions that reduce
-            the operational costs of our clients, thereby increasing shareholder
-            value.
+          To cater to our client needs in the best possible manner through best quality products and services, constant adaptive approach, innovation and embedding integrity in all what we do thus helping in a seamless suplly chain flow
           </p>
         </div>
         <div className="flex justify-center items-center w-full md:w-1/2 md:p-4">
@@ -185,10 +146,8 @@ const AboutLeap = () => {
             VISION
           </h1>
           <p className="mt-5 text-lg md:text-xl text-center md:text-left">
-            The purpose of LEAP is to bring a two-way packaging model to the
-            Indian Supply Chain by providing innovative solutions that reduce
-            the operational costs of our clients, thereby increasing shareholder
-            value.
+            To provide high quality and cost effective packaging solutions and
+            be the best in all what we do.
           </p>
         </div>
       </div>

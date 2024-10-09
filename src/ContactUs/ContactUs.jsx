@@ -3,51 +3,56 @@ import React from "react";
 const ContactDetails = () => {
   return (
     <>
-      <div className="mt-16 h-screen relative w-full py-16 bg-blue-600">
+      <div className="mt-12 md:mt-16 h-screen relative w-full py-24 bg-blue-600 ">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="./AboutUs/Bg.webp"
+            src="./BackgroundImage/gallery8.webp"
             alt="Warehouse"
             className="object-cover w-full h-full opacity-20"
           />
         </div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Content */}
-        <div className="relative mt-12 z-10 max-w-5xl mx-auto px-6 text-white">
-          <h2 className="text-4xl font-bold uppercase text-center mb-12 font-saira">
-            Get in Touch
+        <div className="relative mt-12 z-10 max-w-4xl mx-auto px-6 text-white">
+          <h2 className="text-sm font-semibold uppercase text-white">
+            Contact Us
           </h2>
+          <h1 className="text-4xl md:text-5xl font-bold mt-4">
+            Your Trusted Container Experts
+          </h1>
+          <p className="text-lg md:text-xl mt-4 max-w-xl">
+            We specialize in providing high-quality containers for storage,
+            transportation, and other industrial needs. Our team of experts is
+            ready to assist you with any inquiries or support.
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Phone Section */}
-            <div className="flex flex-col items-center bg-white text-blue-800 p-8 shadow-lg rounded-lg">
-              <div className="text-3xl font-semibold mb-4">Phone</div>
-              <p className="text-lg mb-2"> 8055551110</p>
-              <p className="text-sm text-gray-600">
-                Available Monday to Friday, 9 AM to 6 PM
-              </p>
-            </div>
-
-            {/* Email Section */}
-            <div className="flex flex-col items-center bg-white text-blue-800 p-8 shadow-lg rounded-lg">
-              <div className="text-3xl font-semibold mb-4">Email</div>
-              <p className="text-lg mb-2">rohit@repoolindia.com</p>
-              <p className="text-sm text-gray-600">
-                Feel free to email us with any queries
-              </p>
-            </div>
+          {/* Email Section */}
+          <div className="mt-6 text-white">
+            <p className="font-bold">Email Us: <span className="font-normal">rohit@repoolindia.com</span></p>
+            <p className="text-sm text-gray-300">
+              We're here to answer all your questions and help you find the
+              right solution for your container needs.
+            </p>
           </div>
 
-          {/* Additional Content */}
-          <div className="mt-12 max-w-2xl mx-auto text-center text-white">
-            <p className="text-lg">
-              Whether you have a question about our products, pricing, or
-              anything else, our team is here to help. We provide top-quality
-              containers designed to meet your storage needs.
+          {/* Buttons */}
+          <div className="mt-8 flex space-x-4 justify-center">
+            <button className="bg-green-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-green-600">
+              Call 8055551110
+            </button>
+            
+          </div>
+
+          {/* Additional Section */}
+          <div className="mt-12 text-center">
+            <p className="text-lg md:text-xl max-w-2xl mx-auto">
+              Whether you're looking for storage containers or custom-built
+              solutions, we are here to assist you every step of the way. Contact
+              us for more information!
             </p>
           </div>
         </div>

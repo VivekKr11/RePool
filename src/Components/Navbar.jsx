@@ -112,12 +112,13 @@ const Navbar = () => {
             }}
           >
             <div className="flex gap-1 items-center">
-              <p className="text-gray-800 hover:text-blue-500 cursor-pointer h-full py-6">
-                About
-              </p>
-              <img className="h-3" src="./logo/dropdown.svg" alt="Dropdown" />
+              <NavLink to="/AboutLeap">
+                <p className="text-gray-800 hover:text-blue-500 cursor-pointer h-full py-6">
+                  About
+                </p>
+              </NavLink>
             </div>
-            <div
+            {/* <div
               className={`absolute md:top-16 top-12 left-0 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-700 ease-in-out transform ${
                 dropdowns.about
                   ? "opacity-100 translate-y-0"
@@ -143,7 +144,7 @@ const Navbar = () => {
               <p className="block p-2 w-40 text-gray-800 cursor-pointer">
                 Policies
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Services Dropdown */}
@@ -250,13 +251,13 @@ const Navbar = () => {
                 className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
                 onClick={handleMenuItemClick}
               >
-               Metal Trolleys
+                Metal Trolleys
               </p>
               <p
                 className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
                 onClick={handleMenuItemClick}
               >
-              Others
+                Others
               </p>
             </div>
           </div>
