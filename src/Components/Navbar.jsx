@@ -230,7 +230,7 @@ const Navbar = () => {
                   Pallet
                 </p>
               </NavLink>
-              <NavLink to ="/flc" >
+              <NavLink to="/flc">
                 <p
                   className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
                   onClick={handleMenuItemClick}
@@ -238,17 +238,25 @@ const Navbar = () => {
                   FLC
                 </p>
               </NavLink>
+              <NavLink to="/ppboxes">
+                <p
+                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  onClick={handleMenuItemClick}
+                >
+                  PP Boxes
+                </p>
+              </NavLink>
               <p
                 className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
                 onClick={handleMenuItemClick}
               >
-                Window FLC
+               Metal Trolleys
               </p>
               <p
                 className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
                 onClick={handleMenuItemClick}
               >
-                Corrugated Pallet
+              Others
               </p>
             </div>
           </div>

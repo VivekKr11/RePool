@@ -10,6 +10,8 @@ import Leadership from "./AboutPage/Leadership";
 import AnnualReturn from "./AboutPage/AnnualReturn";
 import Pallet from "./Product/Pallet";
 import FLC from './Product/FLC';
+import Ppboxes from './Product/Ppboxes';
+import ContactUs from "./ContactUs/ContactUs";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/annualreturn" element={<AnnualReturn />} />
           <Route path="/pallet" element={<Pallet />} />
           <Route path="/flc" element={<FLC />} />
+          <Route path="/ppboxes" element={<Ppboxes />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
       </Router>
