@@ -13,11 +13,13 @@ import FLC from './Product/FLC';
 import Ppboxes from './Product/Ppboxes';
 import ContactUs from "./ContactUs/ContactUs";
 import WindowFLC from './Product/WindowFLC';
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+      <ScrollToTop />
       <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
