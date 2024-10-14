@@ -8,17 +8,17 @@ const Footer = () => {
         src="./AboutUs/White-bg-mask.svg"
         alt=""
       />
-      <div className="w-5/6 container m-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:px-6 pt-10">
-        <div className="text-center md:text-left">
+      <div className="w-5/6 container m-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:px-6 md:pt-20">
+        <div className="text-center ">
           <img
             src="/logo/Repool-India-Logo.svg"
             alt="Logo"
-            className="mb-4 h-16 mx-auto md:mx-0"
+            className="mb-4 md:pl-5 h-16 mx-auto md:mx-0"
           />
           <p className="text-gray-300 text-xl mt-4">
             Connect with Us on Social Media
           </p>
-          <div className="flex space-x-8 mt-2">
+          <div className="flex justify-around mt-2">
             <p className="flex items-center cursor-pointer">
               <img
                 className="h-5"
@@ -49,8 +49,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" md:text-left">
-          <h4 className="text-xl font-semibold mb-4 text-center">
+        <div className="md:mt-0 mt-7  md:text-left">
+          <h4 className="text-2xl font-semibold mb-4 ">
             Contact Info
           </h4>
           <div className="flex flex-col items-start gap-2 mt-3">
@@ -68,12 +68,12 @@ const Footer = () => {
             </div>
             <div className="flex gap-2">
               <img className="h-4 mt-1" src="./logo/mail.svg" alt="" />
-              <p className="text-gray-400">info@leapindia.net</p>
+              <p className="text-gray-400">rohit@repoolindia.com</p>
             </div>
           </div>
         </div>
 
-        <div className="relative text-center md:text-left">
+        <div className="md:mt-0 mt-7 relative text-center md:text-left">
           <div className="bg-gradient-to-r from-gray-800 to-gray-600 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center">
             <div className="bg-gray-900 text-white text-sm px-4 py-2 rounded shadow-lg w-full">
               Download LEAP Brochure Here
@@ -95,7 +95,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center md:text-left">
+        <div className="md:mt-0 mt-7 text-center md:text-left">
           <h4 className="text-xl font-semibold mb-4">Privacy & Terms</h4>
           <p className="text-gray-400">
             Please read our Privacy Policy and T&Cs carefully as it will help
