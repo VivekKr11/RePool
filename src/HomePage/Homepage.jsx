@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import MiddleSection from "./MiddleSection";
+import InfiniteMovingCard from "../InfiniteMovingCard";
 
 const Homepage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -277,47 +278,10 @@ const Homepage = () => {
             </p>
           </div>
         </div>
+        <InfiniteMovingCard />
       </div>
-      {/* sixth section */}
-      <div className="flex flex-wrap justify-center">
-        <div className="container m-auto w-full flex flex-wrap justify-around gap-10">
-          <img
-            className="rounded-lg"
-            src="https://placehold.co/400x300"
-            alt="Image 1"
-          />
-
-          <img
-            className="rounded-lg"
-            src="https://placehold.co/400x300"
-            alt="Image 2"
-          />
-
-          <img
-            className="rounded-lg"
-            src="https://placehold.co/400x300"
-            alt="Image 3"
-          />
-
-          <img
-            className="rounded-lg"
-            src="https://placehold.co/400x300"
-            alt="Image 4"
-          />
-
-          <img
-            className="rounded-lg"
-            src="https://placehold.co/400x300"
-            alt="Image 5"
-          />
-
-          <img
-            className="rounded-lg"
-            src="https://placehold.co/400x300"
-            alt="Image 6"
-          />
-        </div>
-      </div>
+      
+      
       {/* last section  */}
       <div className="relative w-full bg-[#EFEFEC] py-9 flex justify-center mt-12">
         <div className="relative w-5/6 h-[500px] rounded-3xl overflow-hidden container m-auto">

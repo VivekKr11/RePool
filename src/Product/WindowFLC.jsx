@@ -23,11 +23,19 @@ const WindowFLC = () => {
           </div>
 
           {/* Right image */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
+            {/* Blob image - positioned behind */}
+            <img
+              src="./blob/blob3.svg"
+              alt="Additional Image"
+              className="absolute object-contain  h-full z-0"
+            />
+
+            {/* Main image - positioned above */}
             <img
               src="./FinalPhotos/image2.png"
               alt="LEAP Pallet"
-              className="object-contain max-w-full h-auto"
+              className="relative object-contain  h-1/2 z-10"
             />
           </div>
         </div>

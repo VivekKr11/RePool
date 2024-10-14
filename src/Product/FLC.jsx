@@ -8,9 +8,18 @@ const FLC = () => {
         <div className="mt-12 container mx-auto px-4 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
           {/* Left content */}
           <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
-            <h1 className="text-3xl md:text-5xl font-bold"> Repool India FLC</h1>
+            <h1 className="text-3xl md:text-5xl font-bold">
+              {" "}
+              Repool India FLC
+            </h1>
             <p className="text-base md:text-lg leading-relaxed">
-            Foldabable Large Containers or FLCs are specifically designed to provide maximum product protection and load stability while reducing the cost of relocating empty containers since they are foldable. As the name suggests, these FLCs are collapsible which are used to transport a variety of cargoes. Repool India deos not only supply plastic FLCs but metal FLCs too depending upon the customer requirement. 
+              Foldabable Large Containers or FLCs are specifically designed to
+              provide maximum product protection and load stability while
+              reducing the cost of relocating empty containers since they are
+              foldable. As the name suggests, these FLCs are collapsible which
+              are used to transport a variety of cargoes. Repool India deos not
+              only supply plastic FLCs but metal FLCs too depending upon the
+              customer requirement.
             </p>
 
             {/* Brochure button */}
@@ -20,11 +29,19 @@ const FLC = () => {
           </div>
 
           {/* Right image */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
+            {/* Blob image - positioned behind */}
+            <img
+              src="./blob/blob2.svg"
+              alt="Additional Image"
+              className="absolute object-contain md:-right-4 h-full z-0"
+            />
+
+            {/* Main image - positioned above */}
             <img
               src="./FinalPhotos/image2.png"
               alt="LEAP Pallet"
-              className="object-contain max-w-full h-auto"
+              className="relative object-contain  h-1/2 z-10"
             />
           </div>
         </div>
