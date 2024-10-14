@@ -12,6 +12,7 @@ import Pallet from "./Product/Pallet";
 import FLC from './Product/FLC';
 import Ppboxes from './Product/Ppboxes';
 import ContactUs from "./ContactUs/ContactUs";
+import WindowFLC from './Product/WindowFLC';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/flc" element={<FLC />} />
           <Route path="/ppboxes" element={<Ppboxes />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/windowflc" element={<WindowFLC />} />
         </Routes>
         <Footer />
       </Router>
