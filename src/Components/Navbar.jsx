@@ -112,7 +112,7 @@ const Navbar = () => {
             }}
           >
             <div className="flex gap-1 items-center">
-              <NavLink to="/AboutLeap">
+              <NavLink to="/AboutLeap" onClick={handleMenuItemClick}>
                 <p className="text-gray-800 hover:text-blue-500 cursor-pointer h-full py-6">
                   About
                 </p>

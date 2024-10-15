@@ -3,14 +3,24 @@ import React from "react";
 const Pallet = () => {
   return (
     <>
-      <div className="mt-16 min-h-screen bg-gradient-to-r from-blue-600 to-gray-900 text-white py-12 font-saira">
+      <div className="mt-12 md:mt-16 min-h-screen bg-gradient-to-r from-blue-600 to-gray-900 text-white py-12 font-saira">
         {/* Main content wrapper */}
         <div className="mt-12 container mx-auto px-4 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
           {/* Left content */}
           <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
-            <h1 className="text-3xl md:text-5xl font-bold"> Repool India Pallet </h1>
+            <h1 className="text-3xl md:text-5xl font-bold">
+              {" "}
+              Repool India Pallet{" "}
+            </h1>
             <p className="text-base md:text-lg leading-relaxed">
-            Repool India manufactures and supply a wide range of pallets to its customer. After understanding customer's need we help our customers the pallets best suited for their SCM needs. Our vast range of product includes wooden, metal & plastic pallets. Repool India strives to attain high-quality product and service standards to help your Supply Chain function economically and efficiently in a seamless manner. Get the palllet right fitted for your SCM whenever and wherever you need.
+              Repool India manufactures and supply a wide range of pallets to
+              its customer. After understanding customer's need we help our
+              customers the pallets best suited for their SCM needs. Our vast
+              range of product includes wooden, metal & plastic pallets. Repool
+              India strives to attain high-quality product and service standards
+              to help your Supply Chain function economically and efficiently in
+              a seamless manner. Get the palllet right fitted for your SCM
+              whenever and wherever you need.
             </p>
 
             {/* Brochure button */}
@@ -286,12 +296,14 @@ const Pallet = () => {
           </div>
         </div>
 
-        {/* Red Contact Banner */}
+       
       </div>
-      <div className="bg-blue-900 mt-10 py-16 text-white text-center flex justify-center ">
-        <div className="w-5/6 flex justify-around items-center text-xl">
-          <p>Get in touch with us to know how LEAP can help your business.</p>
-          <button className="mt-4 bg-white text-gray-500 px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
+      <div className="bg-blue-900 mt-10 py-16 text-white text-center flex justify-center">
+        <div className="w-full sm:w-5/6 px-4 sm:px-0 flex flex-col sm:flex-row justify-around items-center text-lg sm:text-xl">
+          <p className="mb-4 sm:mb-0 sm:w-1/2">
+            Get in touch with us to know how LEAP can help your business.
+          </p>
+          <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
             Contact
           </button>
         </div>

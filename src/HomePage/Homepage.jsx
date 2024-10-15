@@ -113,11 +113,11 @@ const Homepage = () => {
         </Slider>
       </div>
       {/* second section */}
-      <div className="bg-black text-white p-10">
+      <div className="bg-black text-white p-4 md:p-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Section */}
           <div className="space-y-6">
-            <h1 className="text-5xl font-bold md:text-left text-center">
+            <h1 className="text-3xl md:text-5xl font-bold md:text-left text-center">
               Best-in-Class Solutions for your Supply Chain
             </h1>
             <p className="text-lg leading-relaxed md:text-left text-center">
@@ -137,7 +137,7 @@ const Homepage = () => {
                 className="w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
               />
             </div>
-            <div className="p-14">
+            <div className="p-12 md:p-14">
               <h3 className="text-2xl font-semibold mb-2">Services</h3>
               <p className="mt-7">
                 Custom tailored services that best fit your Supply Chain needs.
@@ -161,7 +161,7 @@ const Homepage = () => {
                 className="w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
               />
             </div>
-            <div className="p-14">
+            <div className="p-12 md:p-14">
               <h3 className="text-2xl font-semibold mb-2">Products</h3>
               <p className="mt-7">
                 Our products are the backbone of all supply chain businesses.
@@ -179,13 +179,13 @@ const Homepage = () => {
       </div>
 
       {/* Third Section */}
-      <div className="bg-white p-8 flex items-center justify-center min-h-screen">
+      <div className="bg-white p-4 md:p-10 flex items-center justify-center min-h-screen">
         {/* Text Section */}
         <div className="md:w-5/6 flex justify-center container m-auto">
           <div>
             <div className="flex md:flex-row flex-col justify-between">
               <div className="md:w-1/2 w-full">
-                <h1 className="text-5xl md:text-left text-center font-bold mb-4 md:p-5">
+                <h1 className="text-3xl md:text-5xl md:text-left text-center font-bold mb-4 md:p-5">
                   An Efficient and Effective Supply Chain
                 </h1>
               </div>
@@ -236,7 +236,7 @@ const Homepage = () => {
       {/* fourth section */}
       <MiddleSection />
       {/* fifth section */}
-      <div className=" p-10">
+      <div className=" p-4 md:p-10">
         {/* Container for the whole section */}
         <div className="container m-auto w-full flex md:flex-row flex-col items-center mx-auto   gap-10">
           {/* Left Section: Pioneers in Asset Pooling */}
@@ -267,10 +267,10 @@ const Homepage = () => {
         </div>
         <div className="flex justify-center mt-12">
           <div className="md:w-1/2 w-full container m-auto">
-            <p className="text-5xl font-bold text-center">
+            <p className="text-3xl md:text-5xl font-bold text-center">
               Client Testimonials
             </p>
-            <p className="mt-6 text-center">
+            <p className="mt-1 md:mt-6 text-center">
               We are the proud providers of asset pooling services in India but
               often it’s not just about what we do, it’s about how we do it.
               Don’t just take our word for it though, watch what our esteemed
@@ -280,11 +280,10 @@ const Homepage = () => {
         </div>
         <InfiniteMovingCard />
       </div>
-      
-      
+
       {/* last section  */}
-      <div className="relative w-full bg-[#EFEFEC] py-9 flex justify-center mt-12">
-        <div className="relative w-5/6 h-[500px] rounded-3xl overflow-hidden container m-auto">
+      <div className="relative w-full bg-[#EFEFEC] p-4 md:py-9 flex justify-center mt-12">
+        <div className="relative w-full max-w-5xl h-[500px] rounded-3xl overflow-hidden container m-auto">
           <img
             src="./BackgroundImage/gallery8.webp"
             alt="A Sustainable Future"
@@ -292,7 +291,7 @@ const Homepage = () => {
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <div className="text-center text-white p-6 md:p-8">
-              <h1 className="text-2xl md:text-4xl font-bold ">
+              <h1 className="text-2xl md:text-4xl font-bold">
                 A Sustainable Future
               </h1>
               <p className="mt-4 text-sm md:text-lg leading-relaxed">
@@ -311,7 +310,7 @@ const Homepage = () => {
                 towards helping the environment and conducting business
                 sensibly.
               </p>
-              <button className="mt-6 px-6 py-4 border border-white text-white hover:bg-white hover:text-black transition-all duration-300">
+              <button className="mt-6 px-4 py-2 md:px-6 md:py-4 border border-white text-white hover:bg-white hover:text-black transition-all duration-300">
                 Learn more
               </button>
             </div>

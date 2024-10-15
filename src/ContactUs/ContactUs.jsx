@@ -3,7 +3,7 @@ import React from "react";
 const ContactDetails = () => {
   return (
     <>
-      <div className="mt-12 md:mt-16 h-screen relative w-full py-24 bg-blue-600 ">
+      <div className="mt-12 md:mt-16 h-screen relative w-full md:py-24 py-10 bg-blue-600 ">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -42,7 +42,7 @@ const ContactDetails = () => {
           {/* Buttons */}
           <div className="mt-8 flex space-x-4 justify-center">
             <button className="bg-green-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-green-600">
-              Call 8055551110
+              Call +91 8055551110
             </button>
             
           </div>
