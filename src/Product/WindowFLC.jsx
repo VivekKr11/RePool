@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const WindowFLC = () => {
   return (
@@ -10,7 +11,7 @@ const WindowFLC = () => {
           <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
             <h1 className="text-3xl md:text-5xl font-bold">
               {" "}
-              Repool India Pallet{" "}
+              Repool India Window FLC{" "}
             </h1>
             <p className="text-base md:text-lg leading-relaxed">
               FLC which comes with a window or flap to allow easy access to the
@@ -35,12 +36,12 @@ const WindowFLC = () => {
             <img
               src="./blob/blob3.svg"
               alt="Additional Image"
-              className="absolute object-contain  h-full z-0"
+              className="absolute object-contain right-12 h-full z-0"
             />
 
             {/* Main image - positioned above */}
             <img
-              src="./FinalPhotos/image2.png"
+              src="./windowflc/window3.png"
               alt="LEAP Pallet"
               className="relative object-contain  h-1/2 z-10"
             />
@@ -119,7 +120,7 @@ const WindowFLC = () => {
             {/* Pallet 1 */}
             <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 pb-8 lg:pb-16 p-2">
               <img
-                src="./FinalPhotos/image1.png"
+                src="./windowflc/window1.png"
                 alt="PL-1200 x 1000"
                 className="mx-auto object-contain"
               />
@@ -135,7 +136,7 @@ const WindowFLC = () => {
             <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 pb-8 lg:pb-12 flex items-center p-2">
               <div>
                 <img
-                  src="./FinalPhotos/image3.png"
+                  src="./windowflc/window2.png"
                   alt="E-1200 x 1000"
                   className="mx-auto object-contain"
                 />
@@ -156,7 +157,7 @@ const WindowFLC = () => {
             {/* Pallet 1 */}
             <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
               <img
-                src="./FinalPhotos/image4.png"
+                src="./windowflc/window4.png"
                 alt="Pallet 1"
                 className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
               />
@@ -166,7 +167,7 @@ const WindowFLC = () => {
             {/* Pallet 2 */}
             <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
               <img
-                src="./FinalPhotos/image5.png"
+                src="./windowflc/window1.png"
                 alt="Pallet 2"
                 className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
               />
@@ -176,7 +177,7 @@ const WindowFLC = () => {
             {/* Pallet 3 */}
             <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
               <img
-                src="./FinalPhotos/image6.png"
+                src="./windowflc/window6.png"
                 alt="Pallet 3"
                 className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
               />
@@ -303,9 +304,11 @@ const WindowFLC = () => {
           <p className="mb-4 sm:mb-0 sm:w-1/2">
             Get in touch with us to know how LEAP can help your business.
           </p>
-          <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
-            Contact
-          </button>
+          <NavLink to='/contact'>
+            <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
+              Contact
+            </button>
+          </NavLink>
         </div>
       </div>
     </>

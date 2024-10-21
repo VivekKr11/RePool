@@ -57,18 +57,18 @@ const Footer = () => {
             <div className="flex gap-2">
               <img className="h-4 mt-1" src="./logo/location.svg" alt="" />
               <p className="text-gray-400">
-                302, Ruby Crescent Business Boulevard
+                Gate No 123, Moi Road, Siddeshwar Cahowk, Murhe Wasti, Chimbali Phata Pune 410501
               </p>
             </div>
             <div className="flex gap-2">
               <img className="h-4 mt-1" src="./logo/pin.svg" alt="" />
               <p className="text-gray-400">
-                Ashok Nagar, Kandivali (E), Mumbai Maharashtra - 400101, India
+               G.No.2258/2 Hotel laxmi pune nasix highway Chakan, Pune - 410501
               </p>
             </div>
             <div className="flex gap-2">
               <img className="h-4 mt-1" src="./logo/mail.svg" alt="" />
-              <p className="text-gray-400">rohit@repoolindia.com</p>
+              <p className="text-gray-400">adarsh@repoolindia.com</p>
             </div>
           </div>
         </div>

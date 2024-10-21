@@ -14,6 +14,8 @@ import Ppboxes from './Product/Ppboxes';
 import ContactUs from "./ContactUs/ContactUs";
 import WindowFLC from './Product/WindowFLC';
 import ScrollToTop from "./ScrollToTop";
+import MetalTrolley from './Product/MetalTrolley';
+import Others from './Product/Others';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="/ppboxes" element={<Ppboxes />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/windowflc" element={<WindowFLC />} />
+          <Route path="/metaltrolley" element={<MetalTrolley />} />
+          <Route path="/others" element={<Others />} />
         </Routes>
         <Footer />
       </Router>

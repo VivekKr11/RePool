@@ -1,6 +1,20 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { NavLink } from "react-router-dom";
 
 const FLC = () => {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 2000, // Set autoplay speed (3000ms = 3 seconds)
+  };
+
   return (
     <>
       <div className="mt-12 md:mt-16 min-h-screen bg-[#f6f7f7]  py-12 font-saira">
@@ -34,12 +48,12 @@ const FLC = () => {
             <img
               src="./blob/blob2.svg"
               alt="Additional Image"
-              className="absolute object-contain md:-right-4 h-full z-0"
+              className="absolute object-contain md:-right- h-full z-0"
             />
 
             {/* Main image - positioned above */}
             <img
-              src="./FinalPhotos/image2.png"
+              src="./flc/flc1.png"
               alt="LEAP Pallet"
               className="relative object-contain  h-1/2 z-10"
             />
@@ -89,7 +103,7 @@ const FLC = () => {
           </div>
         </div>
       </div>
-      <div className="container m-auto flex flex-col md:flex-row items-start justify-between py-12 px-4 md:px-16 bg-white">
+      <div className="container m-auto flex flex-col md:flex-row items-start justify-between py-1 px-4 md:px-16 bg-white mt-7">
         {/* Left Side - Text Content */}
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -182,67 +196,67 @@ const FLC = () => {
           </div>
         </div>
       </div>
-      <div className="py-12 bg-white font-saira">
-        <div className="container mx-auto px-4">
-          {/* Pallet Images Section */}
-          <div className="flex flex-wrap justify-around items-center  overflow-hidden">
-            {/* Pallet 1 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./FinalPhotos/image4.png"
-                alt="Pallet 1"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
-
-            {/* Pallet 2 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./FinalPhotos/image5.png"
-                alt="Pallet 2"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
-
-            {/* Pallet 3 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./FinalPhotos/image6.png"
-                alt="Pallet 3"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
+      <div className=" bg-white font-saira container m-auto p-3">
+        <Slider {...settings}>
+          <div>
+            <img
+              src="./flc/flc9.png"
+              alt="Forklift 1"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
           </div>
-
-          {/* Application Section */}
-          <div className="mt-12 container mx-auto px-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-700 text-center">
-              Application
-            </h2>
-
-            {/* Application Icons Section */}
-            <div className="mt-8 flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-10">
-              {/* Icon 1 */}
-              <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center text-center md:text-left">
-                <img
-                  src="./Products/car.svg"
-                  alt="Illustration Design"
-                  className="w-16 h-16 md:w-20 md:h-20"
-                />
-                <p className="mt-4 md:mt-0 text-base md:text-lg font-bold md:w-2/3">
-                  LEAP FLCs are best suited for moving all type of parts for a
-                  wide range of industries. Drop us a message to know how we can
-                  help your SCM achieve better operational efficiencies.
-                </p>
-              </div>
-            </div>
+          <div>
+            <img
+              src="./flc/flc2.png"
+              alt="Forklift 2"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
           </div>
-        </div>
+          <div>
+            <img
+              src="./flc/flc3.png"
+              alt="Forklift 3"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="./flc/flc4.png"
+              alt="Forklift 4"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="./flc/flc5.png"
+              alt="Forklift 5"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="./flc/flc6.png"
+              alt="Forklift 6"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="./flc/flc7.png"
+              alt="Forklift 6"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="./flc/flc8.png"
+              alt="Forklift 6"
+              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
+            />
+          </div>
+        </Slider>
       </div>
-      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white  px-4 sm:px-6 lg:px-8">
         {/* Benefits Section Title */}
         <div className="text-center">
           <h2 className="text-5xl font-extrabold text-gray-700 font-saira">
@@ -298,9 +312,11 @@ const FLC = () => {
           <p className="mb-4 sm:mb-0 sm:w-1/2">
             Get in touch with us to know how LEAP can help your business.
           </p>
-          <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
-            Contact
-          </button>
+          <NavLink to='/contact'>
+            <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
+              Contact
+            </button>
+          </NavLink>
         </div>
       </div>
     </>

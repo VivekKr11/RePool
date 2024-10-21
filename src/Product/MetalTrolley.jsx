@@ -1,27 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Pallet = () => {
+const MetalTrolley = () => {
   return (
     <>
       <div className="mt-12 md:mt-16 min-h-screen bg-gradient-to-r from-blue-600 to-gray-900 text-white py-12 font-saira">
         {/* Main content wrapper */}
         <div className="mt-12 container mx-auto px-4 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
           {/* Left content */}
-          <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
+          <div className="w-full lg:w-1/2 space-y-6 mt-12 lg:mt-0">
             <h1 className="text-3xl md:text-5xl font-bold">
               {" "}
-              Repool India Pallet{" "}
+              Repool India Metal Trolley{" "}
             </h1>
             <p className="text-base md:text-lg leading-relaxed">
-              Repool India manufactures and supply a wide range of pallets to
-              its customer. After understanding customer's need we help our
-              customers the pallets best suited for their SCM needs. Our vast
-              range of product includes wooden, metal & plastic pallets. Repool
-              India strives to attain high-quality product and service standards
-              to help your Supply Chain function economically and efficiently in
-              a seamless manner. Get the palllet right fitted for your SCM
-              whenever and wherever you need.
+              At Repool India, our Metal Trolleys are engineered for maximum
+              efficiency and durability in any industrial setting. Crafted from
+              robust materials, these trolleys are designed to support heavy
+              loads while ensuring smooth mobility. Their ergonomic design and
+              sturdy construction make transporting goods effortless, enhancing
+              workflow in warehouses, factories, and distribution centers. With
+              options for customization, our Metal Trolleys can be tailored to
+              fit your specific operational needs.
             </p>
 
             {/* Brochure button */}
@@ -34,22 +34,22 @@ const Pallet = () => {
           <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
             {/* Blob image - positioned behind */}
             <img
-              src="./blob/blob.svg"
+              src="./blob/blob5.svg"
               alt="Additional Image"
-              className="absolute object-contain md:-right- h-full z-0"
+              className="absolute object-contain h-[500px]  -top-20  md:-top-16 z-0"
             />
 
             {/* Main image - positioned above */}
             <img
-              src="./Pallet/pallet2.png"
+              src="./metal/metal2.png"
               alt="LEAP Pallet"
-              className="relative object-contain right-6 md:right-0 h-1/2 z-10"
+              className="relative object-contain right-3 h-[350px] z-10"
             />
           </div>
         </div>
 
         {/* Additional details */}
-        <div className="container mx-auto px-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto px-4 md:mt-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Extended Load Capacity */}
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">
@@ -120,7 +120,7 @@ const Pallet = () => {
             {/* Pallet 1 */}
             <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 pb-8 lg:pb-16 p-2">
               <img
-                src="./Pallet/pallet1.png"
+                src="./metal/metal1.png"
                 alt="PL-1200 x 1000"
                 className="mx-auto object-contain"
               />
@@ -136,7 +136,7 @@ const Pallet = () => {
             <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 pb-8 lg:pb-12 flex items-center p-2">
               <div>
                 <img
-                  src="./Pallet/pallet3.png"
+                  src="./metal/metal2.png"
                   alt="E-1200 x 1000"
                   className="mx-auto object-contain"
                 />
@@ -150,112 +150,7 @@ const Pallet = () => {
           </div>
         </div>
       </div>
-      <div className="py-12 bg-white font-saira">
-        <div className="container mx-auto px-4">
-          {/* Pallet Images Section */}
-          <div className="flex flex-wrap justify-around items-center  overflow-hidden">
-            {/* Pallet 1 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./Pallet/pallet4.png"
-                alt="Pallet 1"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
 
-            {/* Pallet 2 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./Pallet/pallet5.png"
-                alt="Pallet 2"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
-
-            {/* Pallet 3 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./Pallet/pallet2.png"
-                alt="Pallet 3"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
-          </div>
-
-          {/* Application Section */}
-          <div className="mt-12 container m-auto ">
-            <h2 className="text-5xl font-bold text-gray-700 text-center">
-              Application
-            </h2>
-
-            {/* Application Icons Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-              {/* Icon 1 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/car.svg"
-                  alt="Illustration Design"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Illustration Design</p>
-              </div>
-
-              {/* Icon 2 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/vegetables.svg"
-                  alt="FMCG"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">FMCG</p>
-              </div>
-
-              {/* Icon 3 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/shop.svg"
-                  alt="Ecom Retail"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Ecom/Retail</p>
-              </div>
-
-              {/* Icon 4 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/chemicals.svg"
-                  alt="Chemicals"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Chemicals</p>
-              </div>
-
-              {/* Icon 5 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/oil.svg"
-                  alt="Oil and Paint"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Oil and Paint</p>
-              </div>
-
-              {/* Icon 6 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/refreshment.svg"
-                  alt="Food and Beverage"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Food and Beverage</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
         {/* Benefits Section Title */}
         <div className="text-center">
@@ -302,7 +197,7 @@ const Pallet = () => {
           <p className="mb-4 sm:mb-0 sm:w-1/2">
             Get in touch with us to know how LEAP can help your business.
           </p>
-          <NavLink to='/contact'>
+          <NavLink to="/contact">
             <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
               Contact
             </button>
@@ -313,4 +208,4 @@ const Pallet = () => {
   );
 };
 
-export default Pallet;
+export default MetalTrolley;

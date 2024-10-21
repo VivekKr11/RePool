@@ -255,18 +255,22 @@ const Navbar = () => {
                   PP Boxes
                 </p>
               </NavLink>
-              <p
-                className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
-                onClick={handleMenuItemClick}
-              >
-                Metal Trolleys
-              </p>
-              <p
-                className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
-                onClick={handleMenuItemClick}
-              >
-                Others
-              </p>
+              <NavLink to="/metaltrolley">
+                <p
+                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  onClick={handleMenuItemClick}
+                >
+                  Metal Trolleys
+                </p>
+              </NavLink>
+              <NavLink to="./others">
+                <p
+                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  onClick={handleMenuItemClick}
+                >
+                  Others
+                </p>
+              </NavLink>
             </div>
           </div>
 

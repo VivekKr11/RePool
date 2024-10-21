@@ -6,6 +6,28 @@ import MiddleSection from "./MiddleSection";
 import InfiniteMovingCard from "../InfiniteMovingCard";
 
 const Homepage = () => {
+  const items = [
+    {
+      title: "Reduce",
+      description: "Minimize waste by reducing unnecessary consumption.",
+      image: "/Homepage/reduce.svg", // Path to your logo in the public folder
+    },
+    {
+      title: "Recycle",
+      description: "Recycle materials to turn waste into new products.",
+      image: "/Homepage/recycle.svg", // Path to your logo in the public folder
+    },
+    {
+      title: "Repair",
+      description: "Repair items to extend their usability.",
+      image: "/Homepage/repair.svg", // Path to your logo in the public folder
+    },
+    {
+      title: "Reuse",
+      description: "Reuse items to reduce the need for new resources.",
+      image: "/Homepage/reuse.svg", // Path to your logo in the public folder
+    },
+  ];
   const [activeIndex, setActiveIndex] = useState(0);
 
   const settings = {
@@ -46,72 +68,7 @@ const Homepage = () => {
   return (
     <div className=" font-saira">
       {/* herosection */}
-      <div className="relative w-full h-screen">
-        <Slider {...settings} className="h-full relative">
-          {/* Slide 1 */}
-          <div className="h-screen w-full">
-            <div
-              className="flex justify-center items-center bg-cover bg-center h-full bg-black bg-opacity-50"
-              style={{ backgroundImage: `url(/BackgroundImage/first.webp)` }}
-            >
-              <div className="text-center text-white flex justify-center">
-                <div className="w-3/5">
-                  <h2 className="text-4xl md:text-6xl font-bold ">
-                    LEADING ENTERPRISE IN ASSET POOLING
-                  </h2>
-                  <p className="text-lg md:text-xl mt-4">
-                    Harnessing the strength of circular pooling model for a
-                    competitive advantage.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Slide 2 */}
-          <div className="h-screen w-full">
-            <div
-              className="flex bg-cover bg-center justify-center items-center h-full bg-black bg-opacity-50"
-              style={{ backgroundImage: `url(/BackgroundImage/second.webp)` }}
-            >
-              <div className="text-center text-white mt-60 flex justify-center">
-                <div className="w-3/5">
-                  <h2 className="text-4xl md:text-6xl font-bold font-saira">
-                    ISO 27001 CERTIFIED
-                  </h2>
-                  <p className="text-lg md:text-xl mt-4">
-                    This certification is more than a badge of honor; it is a
-                    reflection of our ongoing journey towards operational
-                    excellence and a commitment to secure, reliable, and
-                    trustworthy service delivery.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Slide 3 */}
-          <div className="h-screen w-full">
-            <div
-              className="flex bg-cover bg-center justify-center items-center h-full bg-black bg-opacity-50"
-              style={{ backgroundImage: "url(./BackgroundImage/third.webp)" }}
-            >
-              <div className="mt-60 text-center text-white flex justify-center">
-                <div className="w-3/5">
-                  <h2 className="text-4xl md:text-6xl font-bold font-saira">
-                    SUSTAINABLE BUSINESS OF THE YEAR
-                  </h2>
-                  <p className="text-lg md:text-xl mt-4">
-                    LEAP India has been awarded Sustainable Business of the Year
-                    and our Founder and our MD Sunu Mathew has been awarded
-                    Sustainability Professional of the Year.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Slider>
-      </div>
+      <MiddleSection />
       {/* second section */}
       <div className="bg-black text-white p-4 md:p-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -184,29 +141,31 @@ const Homepage = () => {
         <div className="md:w-5/6 flex justify-center container m-auto">
           <div>
             <div className="flex md:flex-row flex-col justify-between">
-              <div className="md:w-1/2 w-full">
-                <h1 className="text-3xl md:text-5xl md:text-left text-center font-bold mb-4 md:p-5">
+              <div className="md:w-1/2 w-full flex items-center justify-center text-center ">
+                <h1 className="text-3xl md:text-5xl text-center  font-bold mb-4 md:p-5">
                   An Efficient and Effective Supply Chain
                 </h1>
               </div>
               <div className="md:w-1/2 w-full md:text-left text-center md:p-7">
                 <p className="text-gray-600 leading-relaxed">
-                  We facilitate your Supply Chain with a web-enabled,
-                  state-of-the-art transportation management & tracking system,
-                  designed to keep your mind at ease whilst achieving maximum
-                  efficiency. Our select group of highly trained professionals
-                  have joined forces in a well-defined management environment
-                  that is dedicated to the efficient and effective management of
-                  your supply chain requirements.
+                  We in Repool India acts as an extended team of our esteemed
+                  clients and help the in their supply chain by ensuring to
+                  provide best packaging solutions to our clients whenever and
+                  wherever they need to keep the flow seamless. We feel immense
+                  proud to state that through our dedicated approach and a
+                  people friendly environment we have gained our customers trust
+                  over the years and are able to keep our customers and other
+                  stakeholders happy by matching as well as exceeding their
+                  expectations.
                 </p>
-                <p className="text-gray-600 leading-relaxed mt-10">
+                {/* <p className="text-gray-600 leading-relaxed mt-10">
                   LEAP acts as a trusted supply chain partner to India’s most
                   reputable brands spread across a variety of industries. Get
                   the pallets you need, wherever you need it, whenever you need
                   it. LEAP rents pallets and other assets and also takes care of
                   asset administration, return and repair once you’ve delivered
                   your goods.
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -234,7 +193,26 @@ const Homepage = () => {
         </div>
       </div>
       {/* fourth section */}
-      <MiddleSection />
+      <div className="bg-gray-100 py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8 text-blue-900">
+            Sustainability Practices
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {items.map((item, index) => (
+              <div key={index} className="p-6 bg-white rounded-lg shadow-lg">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-24 h-24 mx-auto mb-4 object-contain"
+                />
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-gray-700">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       {/* fifth section */}
       <div className=" p-4 md:p-10">
         {/* Container for the whole section */}
