@@ -16,6 +16,7 @@ import WindowFLC from './Product/WindowFLC';
 import ScrollToTop from "./ScrollToTop";
 import MetalTrolley from './Product/MetalTrolley';
 import Others from './Product/Others';
+import TermsAndCondition from './TermsAndCondition/TermsAndCondition';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/windowflc" element={<WindowFLC />} />
           <Route path="/metaltrolley" element={<MetalTrolley />} />
           <Route path="/others" element={<Others />} />
+          <Route path="/termsandcondition" element={<TermsAndCondition />} />
         </Routes>
         <Footer />
       </Router>
