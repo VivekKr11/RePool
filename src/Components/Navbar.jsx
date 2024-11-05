@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [dropdowns, setDropdowns] = useState({
     about: false,
-    services: false,
     products: false,
   });
 
@@ -12,7 +11,6 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Check screen size to differentiate between mobile and desktop
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -56,24 +54,22 @@ const Navbar = () => {
   };
 
   const handleMenuItemClick = () => {
-    setIsMobileMenuOpen(false); // Close the mobile menu when an item is clicked
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <nav className="bg-white border-b border-gray-200 fixed top-0 left-0 w-full z-50">
       <div className="container m-auto px-10 flex justify-between items-center">
-        {/* Logo */}
         <div className="flex items-center">
           <img
             src="./logo/Repool-India-Logo.svg"
             alt="Repool Logo"
             className={`transition-all duration-300 ${
               isScrolled ? "h-8" : "h-12"
-            }`} // Adjust height based on scroll
+            }`}
           />
         </div>
 
-        {/* Hamburger/Close Menu Icon */}
         <div className="md:hidden flex items-center">
           <button onClick={toggleMobileMenu} className="focus:outline-none">
             {isMobileMenuOpen ? (
@@ -84,7 +80,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
         <div
           className={`${
             isMobileMenuOpen
@@ -118,87 +113,14 @@ const Navbar = () => {
                 </p>
               </NavLink>
             </div>
-            {/* <div
-              className={`absolute md:top-16 top-12 left-0 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-700 ease-in-out transform ${
-                dropdowns.about
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 -translate-y-2 pointer-events-none"
-              }`}
-            >
-              <NavLink to="/AboutLeap" onClick={handleMenuItemClick}>
-                <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
-                  About LEAP
-                </p>
-              </NavLink>
-              <NavLink to="/leadership" onClick={handleMenuItemClick}>
-                <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
-                  Leadership
-                </p>
-              </NavLink>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
-                Sustainability
-              </p>
-              <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
-                CSR
-              </p>
-              <p className="block p-2 w-40 text-gray-800 cursor-pointer">
-                Policies
-              </p>
-            </div> */}
           </div>
 
-          {/* Services Dropdown */}
-          <div
-            className="relative group"
-            onClick={() => {
-              if (isMobile) toggleDropdown("services");
-            }}
-            onMouseEnter={() => {
-              if (!isMobile) toggleDropdown("services");
-            }}
-            onMouseLeave={() => {
-              if (!isMobile) closeDropdown("services");
-            }}
-          >
-            <div className="flex gap-1 items-center">
-              <p className="text-gray-800 hover:text-blue-500 cursor-pointer py-6">
-                Services
-              </p>
-              <img className="h-3" src="./logo/dropdown.svg" alt="Dropdown" />
-            </div>
-            <div
-              className={`absolute md:top-16 top-12 left-0 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-700 ease-in-out transform ${
-                dropdowns.services
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 -translate-y-2 pointer-events-none"
-              }`}
-            >
-              <p
-                className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
-                onClick={handleMenuItemClick}
-              >
-                Equipment Pooling
-              </p>
-              <p
-                className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
-                onClick={handleMenuItemClick}
-              >
-                Returnable Packing
-              </p>
-              <p
-                className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
-                onClick={handleMenuItemClick}
-              >
-                Transportation
-              </p>
-              <p
-                className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
-                onClick={handleMenuItemClick}
-              >
-                Repair and Management
-              </p>
-            </div>
-          </div>
+         
+          <NavLink to="/services" onClick={handleMenuItemClick}>
+            <p className="py-6 text-gray-800 hover:text-blue-500 cursor-pointer">
+              Services
+            </p>
+          </NavLink>
 
           {/* Products Dropdown */}
           <div

@@ -62,7 +62,7 @@ const AboutLeap = () => {
         />
         <div className="absolute inset-0">
           <img
-            src="./AboutUs/Bg.webp"
+            src="./BackgroundImage/about3.jpeg"
             alt="Warehouse"
             className="object-cover w-full h-full"
           />
@@ -98,7 +98,7 @@ const AboutLeap = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen flex flex-col justify-between bg-white relative">
+      <div className="h-screen flex flex-col justify-between bg-white">
         {/* Header */}
         <div className="flex justify-center">
           <div className="text-black text-4xl md:text-6xl font-semibold mb-4 w-5/6 text-center font-saira">
@@ -106,29 +106,61 @@ const AboutLeap = () => {
           </div>
         </div>
 
-        <div className="absolute z-10 left-1/2 transform -translate-x-1/2 top-40 md:top-24">
-          <img
-            src="./BackgroundImage/truck1.webp"
-            alt=""
-            className="md:w-full md:h-full h-98 object-cover"
-          />
+        {/* Image Section */}
+        <div className="flex-grow flex flex-col justify-center items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-6xl p-6">
+            {/* Image 1 */}
+            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+              <img
+                src="./BackgroundImage/about1.jpeg"
+                alt="Image 1"
+                className="w-full h-72 sm:h-80 object-cover"
+              />
+            </div>
+            {/* Image 2 */}
+            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+              <img
+                src="./BackgroundImage/about5.jpeg"
+                alt="Image 2"
+                className="w-full h-72 sm:h-80 object-cover"
+              />
+            </div>
+            {/* Image 3 */}
+            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+              <img
+                src="./BackgroundImage/about3.jpeg"
+                alt="Image 3"
+                className="w-full h-72 sm:h-80 object-cover"
+              />
+            </div>
+            {/* Image 4 */}
+            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+              <img
+                src="./BackgroundImage/about4.jpeg"
+                alt="Image 4"
+                className="w-full h-72 sm:h-80 object-cover"
+              />
+            </div>
+          </div>
         </div>
-
-        <div className="bg-green-600 w-full h-1/2 md:h-1/3 lg:h-1/2 relative bottom-0"></div>
       </div>
+
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center w-5/6  md:p-4 md:mt-0 mt-16">
         <div className="flex flex-col w-full md:w-1/2 md:p-4">
           <h1 className="text-5xl md:text-6xl font-bold text-center md:text-left">
             MISSION
           </h1>
           <p className="mt-5 text-lg md:text-xl text-center md:text-left">
-          To cater to our client needs in the best possible manner through best quality products and services, constant adaptive approach, innovation and embedding integrity in all what we do thus helping in a seamless suplly chain flow
+            To cater to our client needs in the best possible manner through
+            best quality products and services, constant adaptive approach,
+            innovation and embedding integrity in all what we do thus helping in
+            a seamless suplly chain flow
           </p>
         </div>
         <div className="flex justify-center items-center w-full md:w-1/2 md:p-4">
           <img
             className="w-full h-auto "
-            src="./AboutUs/mission.webp"
+            src="./AboutUs/mission.png"
             alt="Mission Image"
           />
         </div>
@@ -151,54 +183,7 @@ const AboutLeap = () => {
           </p>
         </div>
       </div>
-      <div className="container m-auto flex flex-col md:flex-row items-center justify-center md:p-4">
-        {/* Left Section: Certificate Image */}
-        <div className="w-full md:w-1/2 flex justify-center items-center overflow-hidden">
-          <img
-            src="./AboutUs/cert.webp"
-            alt="Certificate"
-            className="w-auto object-cover transition-transform duration-700 ease-in-out transform hover:scale-110"
-          />
-        </div>
-
-        {/* Right Section: Certificate Details */}
-        <div className="w-full md:w-1/2 md:mt-0 md:ml-12 p-4 font-saira">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Certified for Excellence in Information Security
-          </h2>
-          <p className="text-gray-700 mb-4">
-            LEAP India is proud to announce its recent accomplishment in
-            achieving the ISO 27001:2022 certification. This certification,
-            granted in accordance with Lex Q Certification procedures, marks a
-            significant milestone in our commitment to maintaining the highest
-            standards of information security.
-          </p>
-          <h3 className="text-lg font-semibold text-gray-800">
-            Scope of Certification
-          </h3>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 mt-2">
-            <li>
-              <strong>
-                Ensuring Information Security in Supply Chain Management
-                Solutions:
-              </strong>{" "}
-              We are dedicated to providing secure and reliable solutions in
-              supply chain management.
-            </li>
-            <li>
-              <strong>Design and Technology Implementation:</strong> Our team is
-              committed to implementing cutting-edge design and technology
-              solutions.
-            </li>
-            <li>
-              <strong>Information Technology Services:</strong> Our IT services
-              are in strict compliance with SOA V 1.0. We provide technology
-              solutions that align with this framework, guaranteeing that our
-              applications and services meet the highest security benchmarks.
-            </li>
-          </ul>
-        </div>
-      </div>
+    
 
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center w-5/6 md:space-x-4 md:p-4">
         <div className="flex flex-col w-full md:w-1/2 font-saira">
@@ -206,7 +191,7 @@ const AboutLeap = () => {
             Our Presence
           </h1>
           <p className="mt-5 text-lg md:text-xl text-center md:text-left">
-            We began our operations in 2013, and within a short span, LEAP has
+            We began our operations in 2013, and within a short span, Repool India has
             created a significant PAN India presence.
           </p>
         </div>
@@ -224,7 +209,7 @@ const AboutLeap = () => {
         </div>
       </div>
 
-      <div className="bg-green-600 py-10 md:px-5">
+      {/* <div className="bg-green-600 py-10 md:px-5">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div
@@ -246,7 +231,7 @@ const AboutLeap = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -7,7 +7,7 @@ const ContactDetails = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="./BackgroundImage/gallery8.webp"
+            src="./BackgroundImage/lake.jpeg"
             alt="Warehouse"
             className="object-cover w-full h-full opacity-20"
           />

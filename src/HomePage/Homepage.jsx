@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import MiddleSection from "./MiddleSection";
 import InfiniteMovingCard from "../InfiniteMovingCard";
+import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
   const items = [
@@ -86,34 +87,37 @@ const Homepage = () => {
           </div>
 
           {/* Card 1 */}
-          <div className="bg-[#333333] relative">
-            <div className="relative overflow-hidden">
-              <img
-                src="./BackgroundImage/truck1.webp"
-                alt="Products"
-                className="w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
-              />
-            </div>
-            <div className="p-12 md:p-14">
-              <h3 className="text-2xl font-semibold mb-2">Services</h3>
-              <p className="mt-7">
-                Custom tailored services that best fit your Supply Chain needs.
-              </p>
-              <div className="bg-green-400 w-16 h-16 flex justify-center items-center absolute right-0 bottom-0 group cursor-pointer">
+          <NavLink to="/services">
+            <div className="bg-[#333333] relative">
+              <div className="relative overflow-hidden">
                 <img
-                  className="h-7 transition-transform duration-300 ease-in-out transform group-hover:translate-x-4"
-                  src="./logo/rightarrow.svg"
-                  alt=""
+                  src="./BackgroundImage/truck2.jpeg"
+                  alt="Products"
+                  className="w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
                 />
               </div>
+              <div className="p-12 md:p-14">
+                <h3 className="text-2xl font-semibold mb-2">Services</h3>
+                <p className="mt-7">
+                  Custom tailored services that best fit your Supply Chain
+                  needs.
+                </p>
+                <div className="bg-green-400 w-16 h-16 flex justify-center items-center absolute right-0 bottom-0 group cursor-pointer">
+                  <img
+                    className="h-7 transition-transform duration-300 ease-in-out transform group-hover:translate-x-4"
+                    src="./logo/rightarrow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          </NavLink>
 
           {/* Card 2 */}
           <div className="bg-[#333333] relative">
             <div className="relative overflow-hidden">
               <img
-                src="./BackgroundImage/truck2.webp"
+                src="./BackgroundImage/truck4.jpeg"
                 alt="Products"
                 className="w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
               />
@@ -174,18 +178,18 @@ const Homepage = () => {
               {/* First Image */}
               <div className="md:w-1/2  flex justify-center">
                 <img
-                  src="./BackgroundImage/worker.webp"
+                  src="./BackgroundImage/worker1.jpeg"
                   alt="Supply Chain Workers"
-                  className=" h-5/6 object-cover "
+                  className=" h-3/4 object-cover "
                 />
               </div>
 
               {/* Second Image */}
               <div className="md:w-1/2 mt-6 md:mt-0 flex items-end justify-center">
                 <img
-                  src="./BackgroundImage/product.webp"
+                  src="./BackgroundImage/worker1.jpeg"
                   alt="Warehouse Storage"
-                  className="h-4/5 md:w-5/6 w-fit object-cover"
+                  className="h-4/5 md:w-3/4 w-fit object-cover"
                 />
               </div>
             </div>
@@ -193,7 +197,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* fourth section */}
-      <div className="bg-gray-100 py-16">
+      {/* <div className="bg-gray-100 py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 text-blue-900">
             Sustainability Practices
@@ -212,13 +216,11 @@ const Homepage = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* fifth section */}
       <div className=" p-4 md:p-10">
-        {/* Container for the whole section */}
         <div className="container m-auto w-full flex md:flex-row flex-col items-center mx-auto   gap-10">
-          {/* Left Section: Pioneers in Asset Pooling */}
-          <div className="space-y-6 md:w-1/2 w-full flex flex-col items-center justify-center h-1/2 md:p-12">
+          {/* <div className="space-y-6 md:w-1/2 w-full flex flex-col items-center justify-center h-1/2 md:p-12">
             <div>
               <h1 className="text-4xl md:text-left text-center font-bold text-gray-800">
                 Pioneers in Asset Pooling
@@ -234,14 +236,14 @@ const Homepage = () => {
               </p>
             </div>
           </div>
-          {/* Right Section: Awards Image */}
+          
           <div className="flex justify-center items-center md:w-1/2 w-full">
             <img
               src="./BackgroundImage/best.webp"
               alt="Awards"
               className=" object-cover "
             />
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center mt-12">
           <div className="md:w-1/2 w-full container m-auto">
@@ -260,37 +262,38 @@ const Homepage = () => {
       </div>
 
       {/* last section  */}
-      <div className="relative w-full bg-[#EFEFEC] p-4 md:py-9 flex justify-center mt-12">
-        <div className="relative w-full max-w-5xl h-[500px] rounded-3xl overflow-hidden container m-auto">
+      <div className="relative w-full p-4 md:py-9 flex justify-center mt-12">
+        <div className="relative w-full h-[500px] overflow-hidden container m-auto">
           <img
-            src="./BackgroundImage/gallery8.webp"
+            src="./BackgroundImage/lake.jpeg"
             alt="A Sustainable Future"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <div className="text-center text-white p-6 md:p-8">
-              <h1 className="text-2xl md:text-4xl font-bold">
-                A Sustainable Future
-              </h1>
-              <p className="mt-4 text-sm md:text-lg leading-relaxed">
-                With the growing concern around climate change, there is a need
-                for a collective course of action. LEAP focuses on the
-                contributors of creating a more positive impact on the
-                environment through Sustainable Supply Chain Pooling Solutions
-                by creating products that reduce the use of single-use
-                packaging.
-              </p>
-              <p className="mt-4 text-sm md:text-lg leading-relaxed">
-                By adopting responsible business practices, we are committed to
-                ensuring that our business practices are reliable and safe.
-                Through our mission, we aim to always provide Sustainable Supply
-                Chain Pooling Solutions that create a team which is motivated
-                towards helping the environment and conducting business
-                sensibly.
-              </p>
-              <button className="mt-6 px-4 py-2 md:px-6 md:py-4 border border-white text-white hover:bg-white hover:text-black transition-all duration-300">
-                Learn more
-              </button>
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center">
+            <div className="container mx-auto text-center px-4">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-8 text-gray-100 drop-shadow-lg">
+                Sustainability Practices
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                {items.map((item, index) => (
+                  <div
+                    key={index}
+                    className="p-3 md:p-6 bg-white/80 backdrop-blur-md rounded-lg md:rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300 ease-in-out hover:shadow-2xl"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-14 h-14 md:w-20 md:h-20 mx-auto mb-2 md:mb-4 object-contain"
+                    />
+                    <h3 className="text-sm md:text-xl font-semibold text-gray-800 mb-1 md:mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs md:text-base text-gray-600 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

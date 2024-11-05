@@ -131,13 +131,13 @@ export const InfiniteMovingCards = ({
                     </span>
                   </span>
                 </div>
-                <div className="absolute bottom-2 right-4">
+                {/* <div className="absolute bottom-2 right-4">
                   <img
                     className="h-12 w-12 md:h-14 md:w-14 rounded-full border-2 border-white shadow-md"
                     src={item.img}
                     alt={`${item.name}'s image`}
                   />
-                </div>
+                </div> */}
               </blockquote>
             </li>
           ))}

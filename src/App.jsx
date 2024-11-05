@@ -17,6 +17,8 @@ import ScrollToTop from "./ScrollToTop";
 import MetalTrolley from './Product/MetalTrolley';
 import Others from './Product/Others';
 import TermsAndCondition from './TermsAndCondition/TermsAndCondition';
+import Services from './Services/Services';
+import Privacy from './TermsAndCondition/Privacy';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
           <Route path="/metaltrolley" element={<MetalTrolley />} />
           <Route path="/others" element={<Others />} />
           <Route path="/termsandcondition" element={<TermsAndCondition />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
         <Footer />
       </Router>
