@@ -40,9 +40,7 @@ const Ppboxes = () => {
             </p>
 
             {/* Brochure button */}
-            <button className="px-6 py-3 bg-white text-blue-800 font-semibold hover:bg-gray-100 transition-all">
-              BROCHURE
-            </button>
+            
           </div>
 
           {/* Right image */}
@@ -57,7 +55,7 @@ const Ppboxes = () => {
             {/* Main image - positioned above */}
             <img
               src="./pp/pp3.png"
-              alt="LEAP Pallet"
+              alt="Repool Pallet"
               className="relative object-contain  h-1/2 z-10"
             />
           </div>
@@ -313,7 +311,7 @@ const Ppboxes = () => {
       <div className="bg-blue-900 mt-10 py-16 text-white text-center flex justify-center">
         <div className="w-full sm:w-5/6 px-4 sm:px-0 flex flex-col sm:flex-row justify-around items-center text-lg sm:text-xl">
           <p className="mb-4 sm:mb-0 sm:w-1/2">
-            Get in touch with us to know how LEAP can help your business.
+            Get in touch with us to know how Repool India can help your business.
           </p>
           <NavLink to="/contact">
             <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">

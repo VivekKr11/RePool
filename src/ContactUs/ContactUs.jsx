@@ -32,7 +32,11 @@ const ContactDetails = () => {
 
           {/* Email Section */}
           <div className="mt-6 text-white">
-            <p className="font-bold">Email Us: <span className="font-normal">rohit@repoolindia.com</span></p>
+            <p className="font-bold">
+              Email Us:{" "}
+              <span className="font-normal pl-2">rohit@repoolindia.com</span><span> |</span>
+              <span className="font-normal pl-2">adarsh@repoolindia.com</span>
+            </p>
             <p className="text-sm text-gray-300">
               We're here to answer all your questions and help you find the
               right solution for your container needs.
@@ -42,17 +46,16 @@ const ContactDetails = () => {
           {/* Buttons */}
           <div className="mt-8 flex space-x-4 justify-center">
             <button className="bg-green-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-green-600">
-              Call +91 8055551110
+              Call +91 8055551110, +91 8877139119
             </button>
-            
           </div>
 
           {/* Additional Section */}
           <div className="mt-12 text-center">
             <p className="text-lg md:text-xl max-w-2xl mx-auto">
               Whether you're looking for storage containers or custom-built
-              solutions, we are here to assist you every step of the way. Contact
-              us for more information!
+              solutions, we are here to assist you every step of the way.
+              Contact us for more information!
             </p>
           </div>
         </div>

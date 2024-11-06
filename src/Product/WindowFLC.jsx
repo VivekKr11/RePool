@@ -25,9 +25,7 @@ const WindowFLC = () => {
             </p>
 
             {/* Brochure button */}
-            <button className="px-6 py-3 bg-white text-blue-800 font-semibold hover:bg-gray-100 transition-all">
-              BROCHURE
-            </button>
+            
           </div>
 
           {/* Right image */}
@@ -42,7 +40,7 @@ const WindowFLC = () => {
             {/* Main image - positioned above */}
             <img
               src="./windowflc/window3.png"
-              alt="LEAP Pallet"
+              alt="Repool Pallet"
               className="relative object-contain  h-1/2 z-10"
             />
           </div>
@@ -56,7 +54,7 @@ const WindowFLC = () => {
               Extended Load Capacity
             </h3>
             <p className="text-sm md:text-base">
-              LEAP's pallet’s application ranges from 800 kg to 2 tons in
+              Repool India's pallet’s application ranges from 800 kg to 2 tons in
               dynamic conditions, and up to 5 tons load capacity in static
               conditions.
             </p>
@@ -66,7 +64,7 @@ const WindowFLC = () => {
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">Premium Lumber</h3>
             <p className="text-sm md:text-base">
-              LEAP’s premium quality timber is sourced from Europe, Russian
+              Repool India's premium quality timber is sourced from Europe, Russian
               Federation, Baltic States, Ukraine, and New Zealand.
             </p>
           </div>
@@ -84,7 +82,7 @@ const WindowFLC = () => {
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">Easy Repairs</h3>
             <p className="text-sm md:text-base">
-              LEAP Pallets are easy to repair as they are made with multiple
+              Repool India Pallets are easy to repair as they are made with multiple
               boards which can be removed and replaced when necessary.
             </p>
           </div>
@@ -105,7 +103,7 @@ const WindowFLC = () => {
               {/* Right side: paragraph */}
               <p className="text-base md:text-lg leading-relaxed lg:w-1/2">
                 Our Pallets are engineered for durability. Want to move one box
-                at a time or up to hundreds at a time? LEAP India’s Pallets are
+                at a time or up to hundreds at a time? Repool India India’s Pallets are
                 a time-tested solution and one that's largely accepted as one of
                 the best platform services in India. Our Pallets can be a
                 powerful addition to your product handling strategy which can
@@ -118,33 +116,24 @@ const WindowFLC = () => {
           {/* Image and Description Section */}
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Pallet 1 */}
-            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 pb-8 lg:pb-16 p-2">
+            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 p-2">
               <img
                 src="./windowflc/window1.png"
                 alt="PL-1200 x 1000"
                 className="mx-auto object-contain"
               />
-              <h3 className="text-lg font-bold mt-4">PL - 1200 x 1000</h3>
-              <p className="text-base mt-2">
-                These four-way entry, full perimeter pallets are compatible with
-                Forklift, Reach Truck, and Stacker, and are high racking Pallets
-                suitable for the beverage industry.
-              </p>
+              
             </div>
 
             {/* Pallet 2 */}
-            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 pb-8 lg:pb-12 flex items-center p-2">
+            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2  flex items-center p-2">
               <div>
                 <img
                   src="./windowflc/window2.png"
                   alt="E-1200 x 1000"
                   className="mx-auto object-contain"
                 />
-                <h3 className="text-lg font-bold mt-4">E - 1200 x 1000</h3>
-                <p className="text-base mt-2">
-                  These are two-way entry pallets best suited for storing and
-                  racking in 3PL and FMCG industries.
-                </p>
+                
               </div>
             </div>
           </div>
@@ -302,7 +291,7 @@ const WindowFLC = () => {
       <div className="bg-blue-900 mt-10 py-16 text-white text-center flex justify-center">
         <div className="w-full sm:w-5/6 px-4 sm:px-0 flex flex-col sm:flex-row justify-around items-center text-lg sm:text-xl">
           <p className="mb-4 sm:mb-0 sm:w-1/2">
-            Get in touch with us to know how LEAP can help your business.
+            Get in touch with us to know how Repool India can help your business.
           </p>
           <NavLink to='/contact'>
             <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">

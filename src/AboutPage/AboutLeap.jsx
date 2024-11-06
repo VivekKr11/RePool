@@ -169,7 +169,7 @@ const AboutLeap = () => {
         <div className="flex justify-center items-center w-full md:w-1/2 md:p-4">
           <img
             className="w-full h-auto "
-            src="./AboutUs/vision.webp"
+            src="./AboutUs/vision.png"
             alt="Vision Image"
           />
         </div>
@@ -203,9 +203,9 @@ const AboutLeap = () => {
           />
         </div>
       </div>
-      <div className="container m-auto flex justify-center md:mt-0 mt-10">
+      <div className="container m-auto flex justify-center  mt-10">
         <div className=" w-5/6 flex justify-center">
-          <img className="object-contain  " src="./AboutUs/names.webp" alt="" />
+          <img className="object-contain  " src="./AboutUs/names.png" alt="" />
         </div>
       </div>
 
