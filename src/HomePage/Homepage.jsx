@@ -7,6 +7,11 @@ import InfiniteMovingCard from "../InfiniteMovingCard";
 import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   const items = [
     {
       title: "Reduce",
@@ -114,7 +119,11 @@ const Homepage = () => {
           </NavLink>
 
           {/* Card 2 */}
-          <div className="bg-[#333333] relative">
+          <div
+            className="bg-[#333333] relative overflow-hidden inline-block cursor-pointer"
+            onClick={toggleSidebar}
+          >
+            {/* Image Section */}
             <div className="relative overflow-hidden">
               <img
                 src="./BackgroundImage/truck4.jpeg"
@@ -122,18 +131,69 @@ const Homepage = () => {
                 className="w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
               />
             </div>
+
+            {/* Content Section */}
             <div className="p-12 md:p-14">
               <h3 className="text-2xl font-semibold mb-2">Products</h3>
               <p className="mt-7">
                 Our products are the backbone of all supply chain businesses.
               </p>
+              {/* Arrow Button */}
               <div className="bg-blue-400 w-16 h-16 flex justify-center items-center absolute right-0 bottom-0 group cursor-pointer">
                 <img
                   className="h-7 transition-transform duration-300 ease-in-out transform group-hover:translate-x-4"
                   src="./logo/rightarrow.svg"
-                  alt=""
+                  alt="Open Sidebar"
                 />
               </div>
+            </div>
+
+            {/* Sidebar Content */}
+            <div
+              className={`absolute top-0 right-0 h-full w-full bg-[#131F3A] text-white p-4 transition-transform duration-300 ${
+                isSidebarOpen ? "translate-x-0" : "translate-x-full"
+              }`}
+              style={{ transformOrigin: "right center" }}
+            >
+              <h3 className="text-xl font-semibold mb-4">Product Categories</h3>
+              <div className="space-y-3">
+                <NavLink to="/pallet" onClick={toggleSidebar}>
+                  <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
+                    Pallet
+                  </p>
+                </NavLink>
+                <NavLink to="/flc" onClick={toggleSidebar}>
+                  <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
+                    FLC
+                  </p>
+                </NavLink>
+                <NavLink to="/windowflc" onClick={toggleSidebar}>
+                  <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
+                    Window FLC
+                  </p>
+                </NavLink>
+                <NavLink to="/ppboxes" onClick={toggleSidebar}>
+                  <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
+                    PP Boxes
+                  </p>
+                </NavLink>
+                <NavLink to="/metaltrolley" onClick={toggleSidebar}>
+                  <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
+                    Metal Trolleys
+                  </p>
+                </NavLink>
+                <NavLink to="/others" onClick={toggleSidebar}>
+                  <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
+                    Others
+                  </p>
+                </NavLink>
+              </div>
+              <button
+                onClick={toggleSidebar}
+                className="mt-6 w-full text-blue-400 hover:text-blue-500 transition duration-200"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
