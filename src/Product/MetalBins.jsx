@@ -44,11 +44,16 @@ const MetalBins = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between   rounded-lg overflow-hidden">
         {/* Text Section */}
         <div className="md:w-1/2 w-full p-8 md:p-12 order-2 md:order-1">
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-6">Metal Bins</h1>
+          <h1 className="text-4xl font-extrabold text-gray-800 mb-6">
+            Metal Bins
+          </h1>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            Metal Bins combine strength and versatility to meet your storage needs. At Repool India, we design our metal bins for efficient stacking, easy handling, and durability to withstand industrial demands. Whether for manufacturing, warehousing, or logistics, our Metal Bins ensure secure storage for your materials and components.
+            Metal Bins combine strength and versatility to meet your storage
+            needs. At Repool India, we design our metal bins for efficient
+            stacking, easy handling, and durability to withstand industrial
+            demands. Whether for manufacturing, warehousing, or logistics, our
+            Metal Bins ensure secure storage for your materials and components.
           </p>
-         
         </div>
 
         {/* Carousel Section */}
@@ -56,19 +61,18 @@ const MetalBins = () => {
           <Slider {...settings}>
             <div>
               <img
-                src="./metal/metal1.png"
+                src="./metal/Picture22.png"
                 alt="Forklift 1"
                 className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
               />
             </div>
-            <div>
+           <div>
               <img
-                src="./metal/metal2.png"
-                alt="Forklift 2"
+                src="./metal/Picture22.png"
+                alt="Forklift 1"
                 className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
               />
             </div>
-           
           </Slider>
         </div>
       </div>

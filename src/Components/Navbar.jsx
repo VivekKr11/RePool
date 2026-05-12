@@ -107,7 +107,7 @@ const Navbar = () => {
             }}
           >
             <div className="flex gap-1 items-center">
-              <NavLink to="/AboutLeap" onClick={handleMenuItemClick}>
+              <NavLink to="/About" onClick={handleMenuItemClick}>
                 <p className="text-gray-800 hover:text-blue-500 cursor-pointer h-full py-6">
                   About
                 </p>
@@ -149,29 +149,29 @@ const Navbar = () => {
               }`}
             >
               <NavLink to="/pallet" onClick={handleMenuItemClick}>
-                <p className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer">
+                <p className="block border-b border-gray-200 p-3 w-48 text-gray-800 cursor-pointer">
                   Pallet
                 </p>
               </NavLink>
               <NavLink to="/flc">
                 <p
-                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  className="block border-b border-gray-200 p-3 w-48 text-gray-800 cursor-pointer "
                   onClick={handleMenuItemClick}
                 >
-                  FLC
+                  Plastic PLS and Metal PLS
                 </p>
               </NavLink>
-              <NavLink to="/windowflc">
+              <NavLink to="/windowpls">
                 <p
-                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  className="block border-b border-gray-200 p-3 w-48 text-gray-800 cursor-pointer"
                   onClick={handleMenuItemClick}
                 >
-                  Window FLC
+                  Window PLS
                 </p>
               </NavLink>
               <NavLink to="/ppboxes">
                 <p
-                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  className="block border-b border-gray-200 p-3 w-48 text-gray-800 cursor-pointer"
                   onClick={handleMenuItemClick}
                 >
                   PP Boxes
@@ -179,15 +179,15 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/metaltrolley">
                 <p
-                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  className="block border-b border-gray-200 p-3 w-48 text-gray-800 cursor-pointer"
                   onClick={handleMenuItemClick}
                 >
-                  Metal Trolleys
+                  Metal Trolleys/Pallets
                 </p>
               </NavLink>
               <NavLink to="./others">
                 <p
-                  className="block border-b border-gray-200 p-3 w-40 text-gray-800 cursor-pointer"
+                  className="block border-b border-gray-200 p-3 w-48 text-gray-800 cursor-pointer"
                   onClick={handleMenuItemClick}
                 >
                   Others

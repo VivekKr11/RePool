@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import MiddleSection from "./MiddleSection";
 import InfiniteMovingCard from "../InfiniteMovingCard";
 import { NavLink } from "react-router-dom";
-
+import { CheckCircle, Award, RefreshCw, Truck } from "lucide-react";
 const Homepage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -16,22 +16,22 @@ const Homepage = () => {
     {
       title: "Reduce",
       description: "Minimize waste by reducing unnecessary consumption.",
-      image: "/Homepage/reduce.svg", // Path to your logo in the public folder
+      image: "/Homepage/reduce.svg",
     },
     {
       title: "Recycle",
       description: "Recycle materials to turn waste into new products.",
-      image: "/Homepage/recycle.svg", // Path to your logo in the public folder
+      image: "/Homepage/recycle.svg",
     },
     {
       title: "Repair",
       description: "Repair items to extend their usability.",
-      image: "/Homepage/repair.svg", // Path to your logo in the public folder
+      image: "/Homepage/repair.svg",
     },
     {
       title: "Reuse",
       description: "Reuse items to reduce the need for new resources.",
-      image: "/Homepage/reuse.svg", // Path to your logo in the public folder
+      image: "/Homepage/reuse.svg",
     },
   ];
   const [activeIndex, setActiveIndex] = useState(0);
@@ -84,10 +84,9 @@ const Homepage = () => {
               Best-in-Class Solutions for your Supply Chain
             </h1>
             <p className="text-lg leading-relaxed md:text-left text-center">
-              We help supply chains reduce costs, save time, and enhance
-              customer satisfaction. Our integrated suite of products & services
-              provides transportation/storage management, distribution, and
-              warehousing solutions across the country.
+              Repool India rents and sell high quality pallets and other
+              packaging equipments to help you in a smooth delivery of your
+              assets in the most efficient manner.
             </p>
           </div>
 
@@ -167,9 +166,9 @@ const Homepage = () => {
                     FLC
                   </p>
                 </NavLink>
-                <NavLink to="/windowflc" onClick={toggleSidebar}>
+                <NavLink to="/windowpls" onClick={toggleSidebar}>
                   <p className="block border-b border-gray-600 p-3 text-white cursor-pointer hover:bg-blue-500 hover:text-gray-100 rounded-md transition duration-200">
-                    Window FLC
+                    Window PLS
                   </p>
                 </NavLink>
                 <NavLink to="/ppboxes" onClick={toggleSidebar}>
@@ -200,111 +199,55 @@ const Homepage = () => {
       </div>
 
       {/* Third Section */}
-      <div className="bg-white p-4 md:p-10 flex items-center justify-center min-h-screen">
-        {/* Text Section */}
-        <div className="md:w-5/6 flex justify-center container m-auto">
-          <div>
-            <div className="flex md:flex-row flex-col justify-between">
-              <div className="md:w-1/2 w-full flex items-center justify-center text-center ">
-                <h1 className="text-3xl md:text-5xl text-center  font-bold mb-4 md:p-5">
-                  An Efficient and Effective Supply Chain
-                </h1>
-              </div>
-              <div className="md:w-1/2 w-full md:text-left text-center md:p-7">
-                <p className="text-gray-600 leading-relaxed">
-                  We in Repool India acts as an extended team of our esteemed
-                  clients and help the in their supply chain by ensuring to
-                  provide best packaging solutions to our clients whenever and
-                  wherever they need to keep the flow seamless. We feel immense
-                  proud to state that through our dedicated approach and a
-                  people friendly environment we have gained our customers trust
-                  over the years and are able to keep our customers and other
-                  stakeholders happy by matching as well as exceeding their
-                  expectations.
-                </p>
-                {/* <p className="text-gray-600 leading-relaxed mt-10">
-                  LEAP acts as a trusted supply chain partner to India’s most
-                  reputable brands spread across a variety of industries. Get
-                  the pallets you need, wherever you need it, whenever you need
-                  it. LEAP rents pallets and other assets and also takes care of
-                  asset administration, return and repair once you’ve delivered
-                  your goods.
-                </p> */}
-              </div>
+      <div className="bg-gray-50 py-20 px-4 md:px-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* Left: Image */}
+            <div className="relative">
+              {/* Decorative background box */}
+              <div className="absolute -top-4 -left-4 w-full h-full bg-blue-100 rounded-3xl z-0" />
+              <img
+                src="./BackgroundImage/worker1.jpeg"
+                alt="Supply Chain Workers"
+                className="relative z-10 w-full h-72 md:h-[440px] object-cover rounded-3xl shadow-xl"
+              />
             </div>
 
-            {/* Image Section */}
-            <div className="md:flex md:space-x-8">
-              {/* First Image */}
-              <div className="md:w-1/2  flex justify-center">
-                <img
-                  src="./BackgroundImage/worker1.jpeg"
-                  alt="Supply Chain Workers"
-                  className=" h-3/4 object-cover "
-                />
-              </div>
+            {/* Right: Text Content */}
+            <div className="flex flex-col justify-center space-y-6">
+              {/* Accent label */}
+              <span className="text-blue-600 font-semibold uppercase tracking-widest text-sm">
+                Who We Are
+              </span>
 
-              {/* Second Image */}
-              <div className="md:w-1/2 mt-6 md:mt-0 flex items-end justify-center">
-                <img
-                  src="./BackgroundImage/worker1.jpeg"
-                  alt="Warehouse Storage"
-                  className="h-4/5 md:w-3/4 w-fit object-cover"
-                />
-              </div>
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+                An Efficient and Effective Supply Chain
+              </h1>
+
+              {/* Divider */}
+              <div className="w-12 h-1 bg-blue-600 rounded-full" />
+
+              <p className="text-gray-500 leading-relaxed text-base">
+                In rental model for every rotation cycle we do thorough quality
+                check and perform cleaning and maintenance activity of our
+                packaging assets before returning it to our customer for further
+                movement of assets. on time. Thus, ensuring best quality and
+                service in each & every movement.
+              </p>
+
+              <p className="text-gray-500 leading-relaxed text-base">
+                We, the team of Repool India, are happy and proud to share that
+                we have been in the business for more than 11 years and are
+                serving OEMs and Tier 1 and Tier 2 suppliers since then with our
+                efficient, cost-effective and reusable packaging systems.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      {/* fourth section */}
-      {/* <div className="bg-gray-100 py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8 text-blue-900">
-            Sustainability Practices
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {items.map((item, index) => (
-              <div key={index} className="p-6 bg-white rounded-lg shadow-lg">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-24 h-24 mx-auto mb-4 object-contain"
-                />
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-700">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-      {/* fifth section */}
+
       <div className=" p-4 md:p-10">
-        <div className="container m-auto w-full flex md:flex-row flex-col items-center mx-auto   gap-10">
-          {/* <div className="space-y-6 md:w-1/2 w-full flex flex-col items-center justify-center h-1/2 md:p-12">
-            <div>
-              <h1 className="text-4xl md:text-left text-center font-bold text-gray-800">
-                Pioneers in Asset Pooling
-              </h1>
-              <p className="text-gray-600 md:text-left text-center mt-6">
-                LEAP is a trusted name in India for providing Asset Pooling
-                solutions for use in supply chains. We have an array of Asset
-                Pooling solutions in over 2500 locations, with over 6 million
-                total assets managed, and more than 4000 consumer touchpoints in
-                India. We provide end-to-end customized pooling solutions for
-                our clients. Currently, LEAP India has 22 manufacturing centers
-                and 25 warehouses across the country.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex justify-center items-center md:w-1/2 w-full">
-            <img
-              src="./BackgroundImage/best.webp"
-              alt="Awards"
-              className=" object-cover "
-            />
-          </div> */}
-        </div>
+        <div className="container m-auto w-full flex md:flex-row flex-col items-center mx-auto   gap-10"></div>
         <div className="flex justify-center mt-12">
           <div className="md:w-1/2 w-full container m-auto">
             <p className="text-3xl md:text-5xl font-bold text-center">

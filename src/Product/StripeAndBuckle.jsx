@@ -42,7 +42,7 @@ const StripeAndBuckle = () => {
     <div className="mt-16 flex justify-center items-center w-full p-8 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between   rounded-lg overflow-hidden">
         {/* Text Section */}
-        <div className="md:w-1/2 w-full p-8 md:p-12 order-2 md:order-1">
+        <div className=" w-full p-8 md:p-12 order-2 md:order-1">
           <h1 className="text-4xl font-extrabold text-gray-800 mb-6">
           Strip and Buckle
           </h1>
@@ -52,7 +52,7 @@ const StripeAndBuckle = () => {
         </div>
 
         {/* Carousel Section */}
-        <div className="md:w-1/2 w-full relative order-1 md:order-2">
+        {/* <div className="md:w-1/2 w-full relative order-1 md:order-2">
           <Slider {...settings}>
             <div>
               <img
@@ -104,7 +104,7 @@ const StripeAndBuckle = () => {
               />
             </div>
           </Slider>
-        </div>
+        </div> */}
       </div>
     </div>
   );

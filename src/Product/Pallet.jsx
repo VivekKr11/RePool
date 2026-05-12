@@ -23,11 +23,6 @@ const Pallet = () => {
               a seamless manner. Get the palllet right fitted for your SCM
               whenever and wherever you need.
             </p>
-
-            {/* Brochure button */}
-            {/* <button className="px-6 py-3 bg-white text-blue-800 font-semibold hover:bg-gray-100 transition-all">
-              BROCHURE
-            </button> */}
           </div>
 
           {/* Right images */}
@@ -66,8 +61,7 @@ const Pallet = () => {
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">Premium Lumber</h3>
             <p className="text-sm md:text-base">
-              LEAP’s premium quality timber is sourced from Europe, Russian
-              Federation, Baltic States, Ukraine, and New Zealand.
+             LEAP's pallet’s application ranges from 800 kg to 2 tons in dynamic conditions, and up to 5 tons load capacity in static conditions.
             </p>
           </div>
 

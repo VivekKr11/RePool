@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-gray-900 text-white py-10 font-saira mt-14 overflow-hidden">
       <img
-        className="absolute top-0 left-0 transform rotate-180 w-full h-auto"
+        className="absolute -top-1 left-0 transform rotate-180 w-full h-auto"
         src="./AboutUs/White-bg-mask.svg"
         alt=""
       />

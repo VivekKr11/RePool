@@ -40,7 +40,6 @@ const Ppboxes = () => {
             </p>
 
             {/* Brochure button */}
-            
           </div>
 
           {/* Right image */}
@@ -208,35 +207,35 @@ const Ppboxes = () => {
           </div>
           <div>
             <img
-               src="./pp/pp2.png"
+              src="./pp/pp2.png"
               alt="Forklift 2"
               className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
             />
           </div>
           <div>
             <img
-               src="./pp/pp3.png"
+              src="./pp/pp3.png"
               alt="Forklift 3"
               className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
             />
           </div>
           <div>
             <img
-               src="./pp/pp4.png"
+              src="./pp/pp4.png"
               alt="Forklift 4"
               className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
             />
           </div>
           <div>
             <img
-               src="./pp/pp5.png"
+              src="./pp/pp5.png"
               alt="Forklift 5"
               className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
             />
           </div>
           <div>
             <img
-               src="./pp/pp6.png"
+              src="./pp/pp6.png"
               alt="Forklift 6"
               className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
             />
@@ -311,7 +310,8 @@ const Ppboxes = () => {
       <div className="bg-blue-900 mt-10 py-16 text-white text-center flex justify-center">
         <div className="w-full sm:w-5/6 px-4 sm:px-0 flex flex-col sm:flex-row justify-around items-center text-lg sm:text-xl">
           <p className="mb-4 sm:mb-0 sm:w-1/2">
-            Get in touch with us to know how Repool India can help your business.
+            Get in touch with us to know how Repool India can help your
+            business.
           </p>
           <NavLink to="/contact">
             <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">

@@ -28,14 +28,14 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/AboutLeap" element={<AboutLeap />} />
+          <Route path="/About" element={<AboutLeap />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/annualreturn" element={<AnnualReturn />} />
           <Route path="/pallet" element={<Pallet />} />
           <Route path="/flc" element={<FLC />} />
           <Route path="/ppboxes" element={<Ppboxes />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/windowflc" element={<WindowFLC />} />
+          <Route path="/windowpls" element={<WindowFLC />} />
           <Route path="/metaltrolley" element={<MetalTrolley />} />
           <Route path="/others" element={<Others />} />
           <Route path="/termsandcondition" element={<TermsAndCondition />} />

@@ -1,20 +1,7 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { NavLink } from "react-router-dom";
 
 const FLC = () => {
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000, // Set autoplay speed (3000ms = 3 seconds)
-  };
-
   return (
     <>
       <div className="mt-12 md:mt-16 min-h-screen bg-[#f6f7f7]  py-12 font-saira">
@@ -24,15 +11,15 @@ const FLC = () => {
           <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
             <h1 className="text-3xl md:text-5xl font-bold">
               {" "}
-              Repool India FLC
+              Repool India Plastic PLS and Metal PLS
             </h1>
             <p className="text-base md:text-lg leading-relaxed">
-              Foldabable Large Containers or FLCs are specifically designed to
+              Foldabable Large Containers or Plastic PLS and Metal PLS are specifically designed to
               provide maximum product protection and load stability while
               reducing the cost of relocating empty containers since they are
-              foldable. As the name suggests, these FLCs are collapsible which
+              foldable. As the name suggests, these Plastic PLS and Metal PLS are collapsible which
               are used to transport a variety of cargoes. Repool India deos not
-              only supply plastic FLCs but metal FLCs too depending upon the
+              only supply plastic PLS but metal PLS too depending upon the
               customer requirement.
             </p>
 
@@ -46,14 +33,14 @@ const FLC = () => {
             <img
               src="./blob/blob2.svg"
               alt="Additional Image"
-              className="absolute object-contain md:-right- h-full z-0"
+              className="absolute object-contain md:-right-10 h-full z-0"
             />
 
             {/* Main image - positioned above */}
             <img
-              src="./flc/flc1.png"
+              src="./Homepage/image17.png"
               alt="Repool Pallet"
-              className="relative object-contain  h-1/2 z-10"
+              className="relative object-contain h-80 md:h-1/2 z-10"
             />
           </div>
         </div>
@@ -73,7 +60,7 @@ const FLC = () => {
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">Reduced Costs</h3>
             <p className="text-sm md:text-base">
-              FLCs negate the cost of disposable packaging and reduce
+              PLS negate the cost of disposable packaging and reduce
               transportation and inventory carrying costs by deploying a single
               customized container ensuring Just-In-Time (JIT) delivery.
             </p>
@@ -108,9 +95,9 @@ const FLC = () => {
             OEM-Compliant Containers
           </h2>
           <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-            FLCs are custom-tailored for the automotive industry, where
+            PLS are custom-tailored for the automotive industry, where
             components are small and there's a pressing need for on-time
-            delivery in bulk quantities directly to the production lines. FLCs
+            delivery in bulk quantities directly to the production lines. PLS
             aid the provision of incorporating customized inserts within the
             container which can house the components as per the specifications
             defined by the OEMs.
@@ -194,66 +181,55 @@ const FLC = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-white font-saira container m-auto p-3">
-        <Slider {...settings}>
-          <div>
-            <img
-              src="./flc/flc9.png"
-              alt="Forklift 1"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
+
+      {/* PLS Types Section - replaces carousel */}
+      <div className="bg-white font-saira py-12">
+        <div className="container mx-auto px-4 md:px-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-10">
+            Our PLS Range
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Plastic PLS */}
+            <div className="flex flex-col items-center bg-[#f6f7f7] rounded-lg p-6 shadow-sm border border-gray-100 transform transition-transform duration-500 hover:scale-105">
+              <img
+                src="./Homepage/image17.png"
+                alt="Plastic PLS"
+                className="w-full h-[300px] md:h-[380px] object-contain"
+              />
+              <div className="mt-6 text-center">
+                <h3 className="text-xl md:text-2xl font-bold text-[#1E3C66] mb-2">
+                  Plastic PLS
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  Lightweight, durable, and 100% recyclable. Ideal for handling
+                  automotive components and general industrial cargo with ease
+                  and efficiency.
+                </p>
+              </div>
+            </div>
+
+            {/* Metal PLS */}
+            <div className="flex flex-col items-center bg-[#f6f7f7] rounded-lg p-6 shadow-sm border border-gray-100 transform transition-transform duration-500 hover:scale-105">
+              <img
+                src="./Homepage/image18.png"
+                alt="Metal PLS"
+                className="w-full h-[300px] md:h-[380px] object-contain"
+              />
+              <div className="mt-6 text-center">
+                <h3 className="text-xl md:text-2xl font-bold text-[#1E3C66] mb-2">
+                  Metal PLS
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  Heavy-duty and robust, designed for high-load industrial
+                  applications. Offers superior structural strength while
+                  maintaining the foldable advantage.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img
-              src="./flc/flc2.png"
-              alt="Forklift 2"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="./flc/flc3.png"
-              alt="Forklift 3"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="./flc/flc4.png"
-              alt="Forklift 4"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="./flc/flc5.png"
-              alt="Forklift 5"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="./flc/flc6.png"
-              alt="Forklift 6"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="./flc/flc7.png"
-              alt="Forklift 6"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="./flc/flc8.png"
-              alt="Forklift 6"
-              className="w-full h-[300px] object-contain md:h-[400px] max-w-full mx-auto"
-            />
-          </div>
-        </Slider>
+        </div>
       </div>
+
       <div className="bg-white  px-4 sm:px-6 lg:px-8">
         {/* Benefits Section Title */}
         <div className="text-center">

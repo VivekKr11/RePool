@@ -11,14 +11,14 @@ const WindowFLC = () => {
           <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
             <h1 className="text-3xl md:text-5xl font-bold">
               {" "}
-              Repool India Window FLC{" "}
+              Repool India Window PLS{" "}
             </h1>
             <p className="text-base md:text-lg leading-relaxed">
-              FLC which comes with a window or flap to allow easy access to the
-              container's content is a window FLC and thus helps in reducing the
-              turnaround time. Repool India provides windows on these FLCs
-              either on both long and short side of the FLC or on just one side
-              depending upon the customer requirement.These FLCs are
+              PLS which comes with a window or flap to allow easy access to the
+              container's content is a window PLS and thus helps in reducing the
+              turnaround time. Repool India provides windows on these PLSs
+              either on both long and short side of the PLS or on just one side
+              depending upon the customer requirement.These PLSs are
               specifically designed to provide maximum product protection and
               load stability while reducing the cost of relocating empty
               containers.
@@ -47,7 +47,7 @@ const WindowFLC = () => {
         </div>
 
         {/* Additional details */}
-        <div className="container mx-auto px-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto px-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Extended Load Capacity */}
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">
@@ -60,14 +60,7 @@ const WindowFLC = () => {
             </p>
           </div>
 
-          {/* Premium Lumber */}
-          <div className="space-y-2">
-            <h3 className="text-lg md:text-xl font-bold">Premium Lumber</h3>
-            <p className="text-sm md:text-base">
-              Repool India's premium quality timber is sourced from Europe, Russian
-              Federation, Baltic States, Ukraine, and New Zealand.
-            </p>
-          </div>
+       
 
           {/* Recyclable */}
           <div className="space-y-2">

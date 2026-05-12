@@ -34,7 +34,7 @@ const InfiniteMovingCard = () => {
 
   return (
     <div className=" rounded-md flex flex-col antialiased bg-white dark:bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards items={testimonials} direction="left" speed="fast" />
+      <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
       <img src="" alt="" />
     </div>
   );

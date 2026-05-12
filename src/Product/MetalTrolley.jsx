@@ -9,18 +9,18 @@ const MetalTrolley = () => {
         <div className="mt-12 container mx-auto px-4 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
           {/* Left content */}
           <div className="w-full lg:w-1/2 space-y-6 mt-12 lg:mt-0">
-            <h1 className="text-3xl md:text-5xl font-bold">
+            <h1 className="text-3xl md:text-4xl font-bold">
               {" "}
-              Repool India Metal Trolley{" "}
+              Repool India Metal Trolley/Pallets
             </h1>
             <p className="text-base md:text-lg leading-relaxed">
-              At Repool India, our Metal Trolleys are engineered for maximum
+              At Repool India, our Metal Trolleys/Pallets are engineered for maximum
               efficiency and durability in any industrial setting. Crafted from
               robust materials, these trolleys are designed to support heavy
               loads while ensuring smooth mobility. Their ergonomic design and
               sturdy construction make transporting goods effortless, enhancing
               workflow in warehouses, factories, and distribution centers. With
-              options for customization, our Metal Trolleys can be tailored to
+              options for customization, our Metal Trolleys/Pallets can be tailored to
               fit your specific operational needs.
             </p>
 
@@ -38,15 +38,15 @@ const MetalTrolley = () => {
 
             {/* Main image - positioned above */}
             <img
-              src="./metal/metal2.png"
+              src="./metal/image21.png"
               alt="Repool Pallet"
-              className="relative object-contain right-3 h-[350px] z-10"
+              className="relative object-contain md:right-16 h-[350px] z-10"
             />
           </div>
         </div>
 
         {/* Additional details */}
-        <div className="container mx-auto px-4 md:mt-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto px-4 md:mt-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Extended Load Capacity */}
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">
@@ -59,14 +59,7 @@ const MetalTrolley = () => {
             </p>
           </div>
 
-          {/* Premium Lumber */}
-          <div className="space-y-2">
-            <h3 className="text-lg md:text-xl font-bold">Premium Lumber</h3>
-            <p className="text-sm md:text-base">
-              Repool India’s premium quality timber is sourced from Europe, Russian
-              Federation, Baltic States, Ukraine, and New Zealand.
-            </p>
-          </div>
+        
 
           {/* Recyclable */}
           <div className="space-y-2">
@@ -113,28 +106,18 @@ const MetalTrolley = () => {
           </div>
 
           {/* Image and Description Section */}
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="mt-12 ">
             {/* Pallet 1 */}
             <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2  p-2">
               <img
-                src="./metal/metal1.png"
+                src="./metal/image21.png"
                 alt="PL-1200 x 1000"
                 className="mx-auto object-contain"
               />
               
             </div>
 
-            {/* Pallet 2 */}
-            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 2 flex items-center p-2">
-              <div>
-                <img
-                  src="./metal/metal2.png"
-                  alt="E-1200 x 1000"
-                  className="mx-auto object-contain"
-                />
-               
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
