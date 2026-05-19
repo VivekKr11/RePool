@@ -3,6 +3,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const clientLogos = [
+  { src: "./AboutUs/Ashok_Leyland_Logo.png", alt: "Ashok Leyland" },
+  { src: "./AboutUs/daimiler logo.png", alt: "Daimler" },
+  { src: "./AboutUs/fiat logo.svg", alt: "Fiat" },
+  { src: "./AboutUs/JCB-Logo.jpg", alt: "JCB" },
+  { src: "./AboutUs/Mahindra logo.png", alt: "Mahindra" },
+  { src: "./AboutUs/maruti-suzuki-logo.jpg", alt: "Maruti Suzuki" },
+  { src: "./AboutUs/new holland agriculture.jpg", alt: "New Holland Agriculture" },
+  { src: "./AboutUs/Tata-Group-logo.png", alt: "Tata Group" },
+  { src: "./AboutUs/Tesla_logo.png", alt: "Tesla" },
+  { src: "./AboutUs/tvs logo.png", alt: "TVS" },
+];
+
 const AboutLeap = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -211,24 +224,57 @@ const AboutLeap = () => {
       </div>
 
       {/* OUR CLIENTS */}
-      <div className="container mx-auto py-12 md:py-20 px-4 font-saira">
+      <div className="py-12 md:py-20 font-saira overflow-hidden">
         {/* Heading */}
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-10 px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Our Clients
           </h1>
         </div>
 
-        {/* Image */}
-        <div className="flex justify-center">
-          <div className="w-full md:w-5/6 flex justify-center">
-            <img
-              className="object-contain w-full"
-              src="./AboutUs/names2.png"
-              alt="Our Clients"
-            />
+        {/* Marquee wrapper */}
+        <div className="relative w-full overflow-hidden">
+          {/* Left fade edge */}
+          <div className="absolute left-0 top-0 h-full w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+          {/* Right fade edge */}
+          <div className="absolute right-0 top-0 h-full w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+
+          {/* Marquee track — duplicated for seamless infinite loop */}
+          <div
+            className="flex items-center gap-16"
+            style={{
+              animation: "marquee 30s linear infinite",
+              width: "max-content",
+            }}
+          >
+            {/* First set */}
+            {clientLogos.map((logo, i) => (
+              <img
+                key={`a-${i}`}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
+              />
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {clientLogos.map((logo, i) => (
+              <img
+                key={`b-${i}`}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
+              />
+            ))}
           </div>
         </div>
+
+        {/* Keyframe style injected inline so no tailwind.config change is needed */}
+        <style>{`
+          @keyframes marquee {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}</style>
       </div>
     </>
   );

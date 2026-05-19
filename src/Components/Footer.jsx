@@ -27,13 +27,7 @@ const Footer = () => {
                 alt="LinkedIn"
               />
             </p>
-            <p className="flex items-center cursor-pointer">
-              <img
-                className="h-5"
-                src="./logo/facebooklog.svg"
-                alt="Facebook"
-              />
-            </p>
+           
             <p className="flex items-center cursor-pointer">
               <img
                 className="h-6"
@@ -41,9 +35,7 @@ const Footer = () => {
                 alt="Instagram"
               />
             </p>
-            <p className="flex items-center cursor-pointer">
-              <img className="h-5" src="./logo/xlogo.png" alt="X/Twitter" />
-            </p>
+           
           </div>
         </div>
 

@@ -44,7 +44,6 @@ const images = [
   { src: "./Homepage/image19.png", alt: "Product 19" },
   { src: "./Homepage/image20.png", alt: "Product 20" },
   { src: "./Homepage/image2.png",  alt: "Product 2"  },
-  { src: "./Homepage/image2.png",  alt: "Product 2b" },
   { src: "./Homepage/image3.png",  alt: "Product 3"  },
   { src: "./Homepage/image5.png",  alt: "Product 5"  },
   { src: "./Homepage/image6.png",  alt: "Product 6"  },

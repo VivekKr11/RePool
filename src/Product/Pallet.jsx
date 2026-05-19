@@ -51,7 +51,7 @@ const Pallet = () => {
               Extended Load Capacity
             </h3>
             <p className="text-sm md:text-base">
-              LEAP's pallet’s application ranges from 800 kg to 2 tons in
+              Repool India pallet’s application ranges from 800 kg to 2 tons in
               dynamic conditions, and up to 5 tons load capacity in static
               conditions.
             </p>
@@ -61,7 +61,7 @@ const Pallet = () => {
           <div className="space-y-2">
             <h3 className="text-lg md:text-xl font-bold">Premium Lumber</h3>
             <p className="text-sm md:text-base">
-             LEAP's pallet’s application ranges from 800 kg to 2 tons in dynamic conditions, and up to 5 tons load capacity in static conditions.
+             Repool India pallet’s application ranges from 800 kg to 2 tons in dynamic conditions, and up to 5 tons load capacity in static conditions.
             </p>
           </div>
 

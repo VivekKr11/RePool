@@ -43,7 +43,7 @@ const Leadership = () => {
           <div className="flex justify-center">
             <p className="text-white text-xl font-saira w-5/6 text-center mt-5 ">
               It takes dedicated, capable, and experienced leaders to ensure
-              LEAP India stays a National Leader in the Supply Chain Solutions
+              Repool India India stays a National Leader in the Supply Chain Solutions
               industry for many years to come. We are confident we have the
               right leadership in place to continue the positive growth we've
               been experiencing since our inception.
@@ -92,7 +92,7 @@ const Leadership = () => {
               strategic management, marketing, sales specializing in supply
               chain solutions. With top leadership decision-making positions at
               global brands such as CHEP and L’Oréal, Sunu is a valuable asset
-              to LEAP India’s leadership team. Some of his educational
+              to Repool India’s leadership team. Some of his educational
               background includes MBA from MIP/IMSR, SMP from IIM, Calcutta, and
               MDP from INSEAD, France.
             </p>
@@ -157,7 +157,7 @@ const Leadership = () => {
               strategic management, marketing, sales specializing in supply
               chain solutions. With top leadership decision-making positions at
               global brands such as CHEP and L’Oréal, Sunu is a valuable asset
-              to LEAP India’s leadership team. Some of his educational
+              to Repool India’s leadership team. Some of his educational
               background includes MBA from MIP/IMSR, SMP from IIM, Calcutta, and
               MDP from INSEAD, France.
             </p>
@@ -200,7 +200,7 @@ const Leadership = () => {
             <h3 className="text-xl font-bold text-center">RAJESHAM ALLE</h3>
             <p className="text-center font-semibold">GM – Finance</p>
             <p className="text-sm mt-4">
-            A certified Chartered Accountant with more than 15 years of experience in the field of Financial Controllership, Accounts and Finance, Business Support, Tax Strategy and Compliance, Process Improvements/Re-engineering and Automation, Internal Audit and Statutory Audit, Rajesham was General Manager – Finance at the Times Network (Times of India Group) and as also at Jet Airways, where he handled Finalisation and Consolidation of Financials. He brings in his valued expertise in Finance Operations, Internal Financial Control (IFC), Demerger, Capital Reduction, Automation of Processes and SAP implementation to LEAP India
+            A certified Chartered Accountant with more than 15 years of experience in the field of Financial Controllership, Accounts and Finance, Business Support, Tax Strategy and Compliance, Process Improvements/Re-engineering and Automation, Internal Audit and Statutory Audit, Rajesham was General Manager – Finance at the Times Network (Times of India Group) and as also at Jet Airways, where he handled Finalisation and Consolidation of Financials. He brings in his valued expertise in Finance Operations, Internal Financial Control (IFC), Demerger, Capital Reduction, Automation of Processes and SAP implementation to Repool India
             </p>
           </div>
 
@@ -228,7 +228,7 @@ const Leadership = () => {
             <h3 className="text-xl font-bold text-center">ANUJ VERMA</h3>
             <p className="text-center font-semibold">Business Head</p>
             <p className="text-sm mt-4">
-            Anuj has over 12 years of experience in sales leadership roles across companies in the FMCG sector. He's a B.Com graduate and holds an MBA in Retail Management. He started his career with Nilkamal, later joining CHEP and LEAP. At LEAP, Anuj implements workflows for driving success and setting benchmarks for FMCG and AUTO segments, steering them towards growth by developing strategies, improving financial and operational efficiencies and guiding a cross-functional and multi-cultural team pan-India.
+            Anuj has over 12 years of experience in sales leadership roles across companies in the FMCG sector. He's a B.Com graduate and holds an MBA in Retail Management. He started his career with Nilkamal, later joining CHEP and Repool. At Repool, Anuj implements workflows for driving success and setting benchmarks for FMCG and AUTO segments, steering them towards growth by developing strategies, improving financial and operational efficiencies and guiding a cross-functional and multi-cultural team pan-India.
 
             </p>
           </div>

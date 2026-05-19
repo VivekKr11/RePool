@@ -14,7 +14,7 @@ const Others = () => {
         <Ppcrates/>
         <Separatorsheet/>
         <StripeAndBuckle/>
-        <DunnageAirBag/>
+        {/* <DunnageAirBag/> */}
     </div>
   )
 }
