@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer
-      className="relative text-white py-10 font-saira mt-14 overflow-hidden"
+      className="rp-footer text-white py-10 font-saira overflow-hidden"
       style={{ background: "linear-gradient(135deg, #050d1a 0%, #0a1f4e 50%, #050d1a 100%)" }}
     >
       <img
