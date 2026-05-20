@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* scroll-behavior removed — Lenis handles smooth scrolling via GSAP ticker */
+
+/* Remove rubber-band bounce at page edges (feels cleaner on the reveal footer) */
+body {
+  overscroll-behavior-y: none;
+  /* Crisper text rendering while scrolling */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Force backdrop-filter support */
