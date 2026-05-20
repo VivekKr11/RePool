@@ -4,29 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-const NextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute top-1/2 right-6 transform -translate-y-1/2 transition-colors p-3 rounded-full shadow-lg cursor-pointer z-10"
-      onClick={onClick}
-    >
-      <FaArrowRight size={20} className="text-black" />
-    </div>
-  );
-};
+const NextArrow = ({ onClick }) => (
+  <div onClick={onClick}
+    className="absolute top-1/2 right-4 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-gray-900 flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors duration-200">
+    <FaArrowRight size={14} className="text-white" />
+  </div>
+);
 
-const PrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute top-1/2 left-6 transform -translate-y-1/2 transition-colors p-3 rounded-full shadow-lg cursor-pointer z-10"
-      onClick={onClick}
-    >
-      <FaArrowLeft size={20} className="text-black" />
-    </div>
-  );
-};
+const PrevArrow = ({ onClick }) => (
+  <div onClick={onClick}
+    className="absolute top-1/2 left-4 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-gray-900 flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors duration-200">
+    <FaArrowLeft size={14} className="text-white" />
+  </div>
+);
 
 const Ppcrates = () => {
   const settings = {
@@ -41,75 +31,43 @@ const Ppcrates = () => {
   };
 
   return (
-    <div className="mt-16 flex justify-center items-center w-full p-8 ">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between   rounded-lg overflow-hidden">
-        {/* Text Section */}
-        <div className="md:w-1/2 w-full p-8 md:p-12 order-2 md:order-1">
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-6">
-           PP Crates
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          At Repool India, we crafted our Foldable PP Crates for industrial use. Made from high-quality polypropylene, there stackable design maximizes space efficiency while ensuring easy accessibility. Resistant to moisture and chemicals, our PP Crates are ideal for various applications, from warehousing to distribution. Elevate your logistical operations with our reliable and durable storage solutions that cater to all your industrial needs.
+    <section className="bg-white py-16 px-4 border-t border-gray-200">
+      <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-12">
+
+        {/* TEXT */}
+        <div className="w-full md:w-1/2 space-y-5 order-2 md:order-1">
+          <span className="inline-flex items-center gap-2 text-[10px] tracking-[0.18em] uppercase text-blue-400 font-medium">
+            <span className="w-6 h-px bg-blue-400" />
+            Others
+          </span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">PP Crates</h2>
+          <div className="w-10 h-[3px] rounded-full bg-blue-500" />
+          <p className="text-gray-500 text-base leading-relaxed">
+            At Repool India, we crafted our Foldable PP Crates for industrial use. Made from
+            high-quality polypropylene, their stackable design maximizes space efficiency while
+            ensuring easy accessibility. Resistant to moisture and chemicals, our PP Crates are
+            ideal for various applications, from warehousing to distribution. Elevate your
+            logistical operations with our reliable and durable storage solutions that cater to
+            all your industrial needs.
           </p>
         </div>
 
-        {/* Carousel Section */}
-        <div className="md:w-1/2 w-full relative order-1 md:order-2">
-          <Slider {...settings}>
-            <div>
-              <img
-                src="./crates/crates1.png"
-                alt="Forklift 1"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="./crates/crates2.png"
-                alt="Forklift 2"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="./crates/crates3.png"
-                alt="Forklift 2"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="./crates/crates4.png"
-                alt="Forklift 2"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="./crates/crates5.png"
-                alt="Forklift 2"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="./crates/crates6.png"
-                alt="Forklift 2"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="./crates/crates7.png"
-                alt="Forklift 2"
-                className="w-full h-[300px] md:h-[400px] object-contain rounded-lg "
-              />
-            </div>
-          </Slider>
+        {/* SLIDER */}
+        <div className="w-full md:w-1/2 relative order-1 md:order-2">
+          <div className="bg-gray-50 rounded-2xl border border-gray-200 overflow-hidden">
+            <Slider {...settings}>
+              {["crates1","crates2","crates3","crates4","crates5","crates6","crates7"].map((name, i) => (
+                <div key={i}>
+                  <img src={`./crates/${name}.png`} alt={`PP Crate ${i + 1}`}
+                    className="w-full h-[280px] md:h-[360px] object-contain p-6" />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Ppcrates;
+export default Ppcrates;  

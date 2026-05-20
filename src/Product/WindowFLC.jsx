@@ -3,297 +3,197 @@ import { NavLink } from "react-router-dom";
 
 const WindowFLC = () => {
   return (
-    <>
-      <div className="mt-12 md:mt-16 min-h-screen bg-gradient-to-r from-blue-600 to-gray-900 text-white py-12 font-saira">
-        {/* Main content wrapper */}
-        <div className="mt-12 container mx-auto px-4 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center">
-          {/* Left content */}
-          <div className="w-full lg:w-1/2 space-y-6 mt-8 lg:mt-0">
-            <h1 className="text-3xl md:text-5xl font-bold">
-              {" "}
-              Repool India Window PLS{" "}
-            </h1>
-            <p className="text-base md:text-lg leading-relaxed">
-              PLS which comes with a window or flap to allow easy access to the
-              container's content is a window PLS and thus helps in reducing the
-              turnaround time. Repool India provides windows on these PLSs
-              either on both long and short side of the PLS or on just one side
-              depending upon the customer requirement.These PLSs are
-              specifically designed to provide maximum product protection and
-              load stability while reducing the cost of relocating empty
-              containers.
-            </p>
+    <div className="font-saira">
 
-            {/* Brochure button */}
-            
-          </div>
+      {/* ── HERO — dark ── */}
+      <section
+        className="min-h-[85vh] w-full flex items-center pt-24 md:pt-28 pb-16 px-4 overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #050d1a 0%, #0a1f4e 60%, #050d1a 100%)" }}
+      >
+        <div className="container mx-auto max-w-6xl w-full">
+          <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-12 lg:gap-16">
 
-          {/* Right image */}
-          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
-            {/* Blob image - positioned behind */}
-            <img
-              src="./blob/blob3.svg"
-              alt="Additional Image"
-              className="absolute object-contain right-12 h-full z-0"
-            />
-
-            {/* Main image - positioned above */}
-            <img
-              src="./windowflc/window3.png"
-              alt="Repool Pallet"
-              className="relative object-contain  h-1/2 z-10"
-            />
-          </div>
-        </div>
-
-        {/* Additional details */}
-        <div className="container mx-auto px-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Extended Load Capacity */}
-          <div className="space-y-2">
-            <h3 className="text-lg md:text-xl font-bold">
-              Extended Load Capacity
-            </h3>
-            <p className="text-sm md:text-base">
-              Repool India's pallet’s application ranges from 800 kg to 2 tons in
-              dynamic conditions, and up to 5 tons load capacity in static
-              conditions.
-            </p>
-          </div>
-
-       
-
-          {/* Recyclable */}
-          <div className="space-y-2">
-            <h3 className="text-lg md:text-xl font-bold">Recyclable</h3>
-            <p className="text-sm md:text-base">
-              100% recyclable and environment-friendly material which is
-              compatible with dollies, conveyors, and other warehouse equipment.
-            </p>
-          </div>
-
-          {/* Easy Repairs */}
-          <div className="space-y-2">
-            <h3 className="text-lg md:text-xl font-bold">Easy Repairs</h3>
-            <p className="text-sm md:text-base">
-              Repool India Pallets are easy to repair as they are made with multiple
-              boards which can be removed and replaced when necessary.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="py-12 bg-white text-gray-900 font-saira ">
-        {/* Main content wrapper */}
-        <div className="container mx-auto px-4 lg:max-w-4xl">
-          {/* Header Section */}
-          <div className="text-center lg:text-left flex lg:flex-row flex-col lg:justify-between lg:items-center">
-            {/* Flex container for title and paragraph */}
-            <div className="flex flex-col lg:flex-row lg:w-full lg:space-x-8 space-y-4 lg:space-y-0">
-              {/* Left side: h1 */}
-              <h1 className="text-3xl text-center md:text-5xl font-bold lg:w-1/2">
-                Holistic Support for Your SCM
+            {/* TEXT */}
+            <div className="w-full lg:w-1/2 space-y-6">
+              <span className="inline-flex items-center gap-2 text-[10px] tracking-[0.18em] uppercase text-blue-400 font-medium">
+                <span className="w-6 h-px bg-blue-400" />
+                Our Products
+              </span>
+              <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                Repool India <br />
+                <span className="text-blue-400">Window PLS</span>
               </h1>
-
-              {/* Right side: paragraph */}
-              <p className="text-base md:text-lg leading-relaxed lg:w-1/2">
-                Our Pallets are engineered for durability. Want to move one box
-                at a time or up to hundreds at a time? Repool India India’s Pallets are
-                a time-tested solution and one that's largely accepted as one of
-                the best platform services in India. Our Pallets can be a
-                powerful addition to your product handling strategy which can
-                bring forth increased operational efficiencies in Product
-                Stacking, storage, handling and transport of goods.
+              <div className="w-12 h-[3px] rounded-full bg-blue-500" />
+              <p className="text-slate-300 text-base leading-relaxed max-w-lg">
+                PLS which comes with a window or flap to allow easy access to the
+                container's content is a window PLS and thus helps in reducing the
+                turnaround time. Repool India provides windows on these PLSs
+                either on both long and short side of the PLS or on just one side
+                depending upon the customer requirement. These PLSs are
+                specifically designed to provide maximum product protection and
+                load stability while reducing the cost of relocating empty
+                containers.
               </p>
             </div>
-          </div>
 
-          {/* Image and Description Section */}
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Pallet 1 */}
-            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2 p-2">
-              <img
-                src="./windowflc/window1.png"
-                alt="PL-1200 x 1000"
-                className="mx-auto object-contain"
-              />
-              
-            </div>
-
-            {/* Pallet 2 */}
-            <div className="text-center border-r-0 lg:border-r-2 border-l-0 lg:border-l-2  flex items-center p-2">
-              <div>
-                <img
-                  src="./windowflc/window2.png"
-                  alt="E-1200 x 1000"
-                  className="mx-auto object-contain"
-                />
-                
-              </div>
+            {/* IMAGE */}
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
+              <img src="./blob/blob3.svg" alt=""
+                className="absolute top-1/2 -right-48 md:-right-44 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] object-contain opacity-30 z-0 pointer-events-none" />
+              <img src="./windowflc/window3.png" alt="Window PLS"
+                className="relative z-10 w-full max-w-sm md:max-w-md object-contain drop-shadow-2xl" />
             </div>
           </div>
         </div>
-      </div>
-      <div className="py-12 bg-white font-saira">
-        <div className="container mx-auto px-4">
-          {/* Pallet Images Section */}
-          <div className="flex flex-wrap justify-around items-center  overflow-hidden">
-            {/* Pallet 1 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./windowflc/window4.png"
-                alt="Pallet 1"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
+      </section>
 
-            {/* Pallet 2 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./windowflc/window1.png"
-                alt="Pallet 2"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
+      {/* ── FEATURES — white, hard cut ── */}
+      <section className="bg-white py-16 px-4">
+        <div className="container mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-3 gap-10">
+          {[
+            {
+              title: "Extended Load Capacity",
+              desc: "Repool India's pallet's application ranges from 800 kg to 2 tons in dynamic conditions, and up to 5 tons load capacity in static conditions.",
+            },
+            {
+              title: "Recyclable",
+              desc: "100% recyclable and environment-friendly material which is compatible with dollies, conveyors, and other warehouse equipment.",
+            },
+            {
+              title: "Easy Repairs",
+              desc: "Repool India Pallets are easy to repair as they are made with multiple boards which can be removed and replaced when necessary.",
+            },
+          ].map((f) => (
+            <div key={f.title} className="border-t-2 border-blue-500 pt-5 space-y-3">
+              <h3 className="text-lg font-bold text-gray-900">{f.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
             </div>
+          ))}
+        </div>
+      </section>
 
-            {/* Pallet 3 */}
-            <div className="relative w-full md:w-1/4 cursor-pointer group overflow-hidden mb-4">
-              <img
-                src="./windowflc/window6.png"
-                alt="Pallet 3"
-                className="object-contain w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-70 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300"></div>
-            </div>
-          </div>
-
-          {/* Application Section */}
-          <div className="mt-12 container m-auto ">
-            <h2 className="text-5xl font-bold text-gray-700 text-center">
-              Application
+      {/* ── HOLISTIC SUPPORT — light gray ── */}
+      <section className="bg-gray-50 py-16 px-4 border-t border-gray-200">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16 gap-6 mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 lg:w-1/2 leading-tight">
+              Holistic Support for Your SCM
             </h2>
+            <p className="text-gray-500 text-base leading-relaxed lg:w-1/2">
+              Our Pallets are engineered for durability. Want to move one box
+              at a time or up to hundreds at a time? Repool India's Pallets are
+              a time-tested solution and one that's largely accepted as one of
+              the best platform services in India. Our Pallets can be a
+              powerful addition to your product handling strategy which can
+              bring forth increased operational efficiencies in Product
+              Stacking, storage, handling and transport of goods.
+            </p>
+          </div>
 
-            {/* Application Icons Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-              {/* Icon 1 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/car.svg"
-                  alt="Illustration Design"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Illustration Design</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {[
+              { src: "./windowflc/window1.png", label: "PL-1200 × 1000" },
+              { src: "./windowflc/window2.png", label: "E-1200 × 1000" },
+            ].map((item) => (
+              <div key={item.label}
+                className="relative bg-white rounded-2xl border border-gray-200 overflow-hidden group shadow-sm hover:shadow-md transition-shadow duration-300">
+                <img src={item.src} alt={item.label}
+                  className="w-full h-64 md:h-72 object-contain p-8 transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute bottom-4 right-4 bg-gray-900 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                  {item.label}
+                </div>
               </div>
-
-              {/* Icon 2 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/vegetables.svg"
-                  alt="FMCG"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">FMCG</p>
-              </div>
-
-              {/* Icon 3 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/shop.svg"
-                  alt="Ecom Retail"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Ecom/Retail</p>
-              </div>
-
-              {/* Icon 4 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/chemicals.svg"
-                  alt="Chemicals"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Chemicals</p>
-              </div>
-
-              {/* Icon 5 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/oil.svg"
-                  alt="Oil and Paint"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Oil and Paint</p>
-              </div>
-
-              {/* Icon 6 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="./Products/refreshment.svg"
-                  alt="Food and Beverage"
-                  className="w-16 h-16"
-                />
-                <p className="mt-4 text-lg font-bold">Food and Beverage</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
-      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
-        {/* Benefits Section Title */}
-        <div className="text-center">
-          <h2 className="text-5xl font-extrabold text-gray-700 font-saira">
+      </section>
+
+      {/* ── GALLERY — white ── */}
+      <section className="bg-white py-12 px-4 border-t border-gray-200">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-wrap justify-around items-center gap-6">
+            {[
+              "./windowflc/window4.png",
+              "./windowflc/window1.png",
+              "./windowflc/window6.png",
+            ].map((src, i) => (
+              <div key={i}
+                className="w-full md:w-[28%] rounded-2xl overflow-hidden border border-gray-200 cursor-pointer group bg-gray-50 hover:shadow-lg transition-shadow duration-300">
+                <img src={src} alt={`Window PLS ${i + 1}`}
+                  className="w-full h-56 object-contain p-6 transition-transform duration-500 group-hover:scale-105" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── APPLICATION — light gray ── */}
+      <section className="bg-gray-50 py-16 px-4 border-t border-gray-200">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
+            Application
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { src: "./Products/car.svg",         label: "Illustration Design" },
+              { src: "./Products/vegetables.svg",  label: "FMCG" },
+              { src: "./Products/shop.svg",        label: "Ecom/Retail" },
+              { src: "./Products/chemicals.svg",   label: "Chemicals" },
+              { src: "./Products/oil.svg",         label: "Oil and Paint" },
+              { src: "./Products/refreshment.svg", label: "Food and Beverage" },
+            ].map((app) => (
+              <div key={app.label}
+                className="flex flex-col items-center gap-3 p-6 bg-white rounded-2xl border border-gray-200 hover:border-blue-400 hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-sm">
+                <img src={app.src} alt={app.label} className="w-14 h-14 object-contain" />
+                <p className="text-gray-800 text-sm font-bold text-center">{app.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── BENEFITS — white ── */}
+      <section className="bg-white py-16 px-4 border-t border-gray-200">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-12">
             Benefits
           </h2>
-        </div>
-
-        {/* Cards Section */}
-        <div className="font-saira mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 container m-auto max-w-screen-lg">
-          {/* Card 1 */}
-          <div className="bg-white shadow-lg rounded-lg p-4 text-center w-2/3 py-12 border mx-auto transform transition-transform duration-500 hover:scale-105 cursor-pointer">
-            <div className="flex justify-start mb-4">
-              <img className="h-10 w-10" src="./Products/flag.svg" alt="flag" />
-            </div>
-            <p className="text-gray-600 text-xl text-start">
-              Faster unloading and loading, resulting in faster turnaround times
-            </p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white shadow-lg rounded-lg p-4 text-center w-2/3 py-12 border mx-auto transform transition-transform duration-500 hover:scale-105 cursor-pointer">
-            <div className="flex justify-start mb-4">
-              <img className="h-10 w-10" src="./Products/flag.svg" alt="flag" />
-            </div>
-            <p className="text-gray-600 text-xl text-start">
-              Lesser risk of product damage
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white shadow-lg rounded-lg p-4 text-center w-2/3 py-12 border mx-auto transform transition-transform duration-500 hover:scale-105 cursor-pointer">
-            <div className="flex justify-start mb-4">
-              <img className="h-10 w-10" src="./Products/flag.svg" alt="flag" />
-            </div>
-            <p className="text-gray-600 text-xl text-start">
-              Reduced risk of temperature degradation for perishable items
-            </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Faster unloading and loading, resulting in faster turnaround times",
+              "Lesser risk of product damage",
+              "Reduced risk of temperature degradation for perishable items",
+            ].map((b, i) => (
+              <div key={i}
+                className="bg-white shadow-md rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <div className="mb-5">
+                  <img className="h-10 w-10" src="./Products/flag.svg" alt="flag" />
+                </div>
+                <p className="text-gray-600 text-lg">{b}</p>
+              </div>
+            ))}
           </div>
         </div>
+      </section>
 
-        {/* Red Contact Banner */}
-      </div>
-      <div className="bg-blue-900 mt-10 py-16 text-white text-center flex justify-center">
-        <div className="w-full sm:w-5/6 px-4 sm:px-0 flex flex-col sm:flex-row justify-around items-center text-lg sm:text-xl">
-          <p className="mb-4 sm:mb-0 sm:w-1/2">
+      {/* ── CTA — dark, hard cut ── */}
+      <section
+        className="py-16 px-4 text-white"
+        style={{ background: "linear-gradient(135deg, #050d1a 0%, #0a1f4e 50%, #050d1a 100%)" }}
+      >
+        <div className="container mx-auto max-w-4xl flex flex-col sm:flex-row justify-around items-center gap-6 text-lg sm:text-xl">
+          <p className="sm:w-1/2 text-slate-300">
             Get in touch with us to know how Repool India can help your business.
           </p>
-          <NavLink to='/contact'>
-            <button className="mt-4 sm:mt-0 bg-white text-gray-500 px-8 sm:px-16 py-2 transform transition-transform duration-500 hover:bg-gray-200 hover:scale-105 flex items-center">
+          <NavLink to="/contact">
+            <button className="bg-white text-gray-800 font-semibold px-12 py-3 rounded-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300">
               Contact
             </button>
           </NavLink>
         </div>
-      </div>
-    </>
+      </section>
+
+    </div>
   );
 };
 

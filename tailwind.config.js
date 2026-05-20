@@ -21,7 +21,6 @@ export default {
         },
       },
     },
-   
   },
   plugins: [addVariablesForColors],
 };
@@ -36,4 +35,3 @@ function addVariablesForColors({ addBase, theme }) {
     ":root": newVars,
   });
 }
-
